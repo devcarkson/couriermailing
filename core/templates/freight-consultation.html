@@ -1,0 +1,247 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Freight Consultation : Couriermailingworldwide | Express Delivery, Courier &amp; Shipping Services | Worlwide{% endblock %}
+
+{% block content %}
+
+	<!-- Start of Breadcrumb section
+	============================================= -->
+	<section id="ft-breadcrumb" class="ft-breadcrumb-section position-relative"
+		data-background="{% static "img/bg/bread-bg.jpg" %}">
+		<span class="background_overlay"></span>
+		<span class="design-shape position-absolute"><img src="{% static "img/shape/tmd-sh.html" %}" alt=""></span>
+		<div class="container">
+			<div class="ft-breadcrumb-content headline text-center position-relative">
+				<h2>Freight Consultation</h2>
+				<div class="ft-breadcrumb-list ul-li">
+					<ul>
+						<li><a href="{% url "index" %}">Home</a></li>
+						<li>Freight Consultation</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Breadcrumb section
+	============================================= -->
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Tracking Section -->
+	<section class="ft1-tracking-section">
+		<div class="auto-container">
+			<div class="inner-container">
+				<div class="row clearfix">
+					<!-- Tracking Column -->
+					<div class="tracking-column col-lg-7 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<!-- Tracking Form -->
+							<div class="tracking-form">
+								<form method="post" class="search-form" id="frmTrack" name="frmTrack" action="#"
+									onsubmit="return false">
+									<div class="form-group">
+										<input type="search" id="shipment_tracking_no" name="shipment_tracking_no"
+											value="" placeholder="Enter Your Tracking Number" required>
+										<button class="theme-btn btn-style-two" name="submitTrackNo"
+												onclick="trackNowFunc()">Track & Trace <span
+												class="icon fas fa-angle-double-right"></span></button>
+									</div>
+								</form>
+
+								{% comment %} <div id="loadingPop" style="display:none;">Loading...</div> {% endcomment %}
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+					<!-- Featured Column -->
+					<div class="featured-column col-lg-5 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<div class="row clearfix">
+
+								<!-- Feature Block -->
+								<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+									<div class="inner-box">
+										<div class="icon flaticon-discount"></div>
+										<h6>Affordable Premium Shipping!</h6>
+									</div>
+								</div>
+
+								<!-- Feature Block -->
+								<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+									<div class="inner-box">
+										<div class="icon flaticon-shield-2"></div>
+										<h6>Safe & Reliable <br> Courier Services!</h6>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Tracking Section -->
+
+
+
+
+
+
+
+	<section id="ft-thx-why-choose-us-3" class="ft-thx-why-choose-us-section-3">
+		<div class="container">
+			<div class="ft-thx-why-choose-us-content-3">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="ft-thx-why-choose-us-text-3">
+							<div class="ft-thx-section-title-3 headline pera-content wow fadeInUp" data-wow-delay="00ms"
+								data-wow-duration="1500ms"
+								style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+								<span></span>
+								<h2>Top Class Freight Consultation Services</h2>
+
+								<p>
+									Our freight & logistics consultants work with express, parcel, postal, trucking,
+									3PL, rail,
+									transport infrastructure, ocean shipping, and distribution network.
+								</p>
+							</div>
+
+
+
+
+
+							<div class="ft-thx-why-choose-item-box headline">
+								<div class="ft-thx-why-choose-item wow fadeInUp" data-wow-delay="100ms"
+									data-wow-duration="1500ms"
+									style="visibility: visible; animation-duration: 1500ms; animation-delay: 100ms; animation-name: fadeInUp; padding:20px;">
+
+									<p style="font-size:13px; line-height:26px;">
+										At couriermailingworldwide, our freight and logistics consultancy services have
+										helped countless companies around
+										the world find the most efficient and cost effective way to ship goods. From
+										planning routes to handling administrative work,
+										we consult on all aspects of freight movement.
+									</p>
+
+
+
+								</div>
+
+
+
+
+
+
+
+
+
+								<div class="ft-thx-why-choose-item wow fadeInUp" data-wow-delay="200ms"
+									data-wow-duration="1500ms"
+									style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp; padding:20px;">
+									<h3>Freight Movement and Route Planning</h3>
+
+
+
+
+									<p style="font-size:13px; margin-top:20px; line-height:26px;">
+										Moving goods around the world requires multiple modes of transport, and
+										overcoming several logistical challenges.
+										If goods are moving from North America to mainland Asia,
+										they are likely transported with a combination of road, rail and sea freight.
+									</p>
+
+
+								</div>
+
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="ft-thx-why-choose-img-3 position-relative wow fadeInRight" data-wow-delay="100ms"
+							data-wow-duration="1500ms"
+							style="visibility: visible; animation-duration: 1500ms; animation-delay: 100ms; animation-name: fadeInRight;">
+							<div class="inner-img">
+								<img src="{% static "imgs/about/ab9.jpg" %}" alt="">
+							</div>
+							<div class="inner-text">
+								10+ Years
+								Of Excellent Services
+							</div>
+							<div class="inner-img-2 position-absolute">
+								<img src="{% static "imgs/about/ab10.jpg" %}">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- End of Service section
+	============================================= -->
+
+
+
+
+	<section id="ft-goodness-feature" class="ft-goodness-feature-section" data-background="{% static "img/bg/shape-bg.jpg" %}"
+		style='background-image: url("{% static "img/bg/shape-bg.jpg" %}"); padding-top:60px;'>
+		<div class="container">
+			<div class="ft-section-title-2 headline pera-content text-center">
+
+				<h2>Exceptional Freight Management Consulting</h2>
+
+
+
+
+				<div style="text-align:left">
+					<p>We take pride in offering impeccable customer service to all of our clients. We treat our
+						business relationships as true partnerships, recognising that for your business, the bottom line
+						is what matters the most.</p>
+
+
+					<br>
+
+					<p>We act as an extension of your business operations, creating freight movement solutions which
+						match your needs and goals.</p>
+
+					<br>
+
+					<p>At couriermailingworldwide, we are committed to quality. By focusing on the processes in delivery
+						of your goods from origin to destination, we ensure that the processes are consistently in line
+						with customer requirements and needs.</p>
+
+					<br>
+
+					<p>This allows us to create the most cost effective and efficient solutions for all freight and
+						logistics consulting clients.</p>
+
+
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+{% endblock %}

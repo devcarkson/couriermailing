@@ -1,0 +1,310 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Export And Import : Couriermailingworldwide | Express Delivery, Courier &amp; Shipping Services | Worlwide{% endblock %}
+
+{% block content %}
+
+	<!-- Start of Breadcrumb section
+	============================================= -->
+	<section id="ft-breadcrumb" class="ft-breadcrumb-section position-relative"
+		data-background="{% static "img/bg/bread-bg.jpg" %}">
+		<span class="background_overlay"></span>
+		<span class="design-shape position-absolute"><img src="{% static "img/shape/tmd-sh.html" %}" alt=""></span>
+		<div class="container">
+			<div class="ft-breadcrumb-content headline text-center position-relative">
+				<h2>Export And Import</h2>
+				<div class="ft-breadcrumb-list ul-li">
+					<ul>
+						<li><a href="{% url "index" %}">Home</a></li>
+						<li>Export And Import</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Breadcrumb section
+	============================================= -->
+
+
+
+
+	<!-- Tracking Section -->
+	<section class="ft1-tracking-section">
+		<div class="auto-container">
+			<div class="inner-container">
+				<div class="row clearfix">
+					<!-- Tracking Column -->
+					<div class="tracking-column col-lg-7 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<!-- Tracking Form -->
+							<div class="tracking-form">
+								<form method="post" class="search-form" id="frmTrack" name="frmTrack" action="#"
+									onsubmit="return false">
+									<div class="form-group">
+										<input type="search" id="shipment_tracking_no" name="shipment_tracking_no"
+											value="" placeholder="Enter Your Tracking Number" required>
+										<button class="theme-btn btn-style-two" name="submitTrackNo"
+												onclick="trackNowFunc()">Track & Trace <span
+												class="icon fas fa-angle-double-right"></span></button>
+									</div>
+								</form>
+
+								{% comment %} <div id="loadingPop" style="display:none;">Loading...</div> {% endcomment %}
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+					<!-- Featured Column -->
+					<div class="featured-column col-lg-5 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<div class="row clearfix">
+
+								<!-- Feature Block -->
+								<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+									<div class="inner-box">
+										<div class="icon flaticon-discount"></div>
+										<h6>Affordable Premium Shipping!</h6>
+									</div>
+								</div>
+
+								<!-- Feature Block -->
+								<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+									<div class="inner-box">
+										<div class="icon flaticon-shield-2"></div>
+										<h6>Safe & Reliable <br> Courier Services!</h6>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Tracking Section -->
+
+
+
+
+
+
+
+	<section id="ft-thx-why-choose-us-3" class="ft-thx-why-choose-us-section-3">
+		<div class="container">
+			<div class="ft-thx-why-choose-us-content-3">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="ft-thx-why-choose-us-text-3">
+
+
+
+							<div class="ft-thx-why-choose-item-box headline" style="padding-top:0px;">
+
+
+
+
+
+
+								<div class="ft-thx-why-choose-item wow fadeInUp" data-wow-delay="100ms"
+									data-wow-duration="1500ms"
+									style="visibility: visible; animation-duration: 1500ms; animation-delay: 100ms; animation-name: fadeInUp; padding:20px;">
+
+									<h2>
+										International Import And Export Specialists
+									</h2>
+
+									<p style="font-size:14px; line-height:26px; margin-top:20px;">
+										At Sharp Express we see our role as a logistics consultant, providing one-stop
+										business solutions that connect people and companies beyond national
+										and regional boundaries, through diverse logistics modes, integrating land and
+										air transport.
+									</p>
+
+
+
+								</div>
+
+
+
+
+
+
+
+
+
+								<div class="ft-thx-why-choose-item wow fadeInUp" data-wow-delay="100ms"
+									data-wow-duration="1500ms"
+									style="visibility: visible; animation-duration: 1500ms; animation-delay: 100ms; animation-name: fadeInUp; padding:20px;">
+
+									<p style="font-size:14px; line-height:26px;">
+										Capitalizing on our extensive international service network, we offer a wide
+										range of consolidated air and road freight forwarding services.
+										Export, Import and Country to Country services include the collection,
+										customs clearance and delivery to a vast range of world-wide destinations.
+									</p>
+
+
+
+								</div>
+
+
+
+
+
+
+								<div class="ft-thx-why-choose-item wow fadeInUp" data-wow-delay="200ms"
+									data-wow-duration="1500ms"
+									style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp; padding:20px;">
+
+
+									<p style="font-size:13px; margin-top:20px; line-height:26px;">
+										We have a dedicated team of trained consultants whom consistently monitor your
+										deliveries and any potential problems
+										and delays are resolved effectively. We connect all our customers to our online
+										portal and
+										pro-actively email real-time updates linked to our on-line tracking.
+									</p>
+
+								</div>
+
+
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="ft-thx-why-choose-img-3 position-relative wow fadeInRight" data-wow-delay="100ms"
+							data-wow-duration="1500ms"
+							style="visibility: visible; animation-duration: 1500ms; animation-delay: 100ms; animation-name: fadeInRight;">
+							<div class="inner-img">
+								<img src="{% static "imgs/about/ab9.jpg" %}" alt="">
+							</div>
+							<div class="inner-text">
+								10+ Years
+								Of Excellent Services
+							</div>
+							<div class="inner-img-2 position-absolute">
+								<img src="{% static "imgs/about/ab10.jpg" %}">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- End of Service section
+	============================================= -->
+
+
+
+
+	<section id="ft-service-3" class="ft-service-section-3 pt-4">
+		<div class="container">
+			<div class="ft-section-title-3 headline text-center wow fadeInUp" data-wow-delay="0ms"
+				data-wow-duration="1500ms"
+				style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+				<span class="text-uppercase">We specialise in the transportation</span>
+				<h2>Specialist Logistics Services</h2>
+			</div>
+			<div class="ft-service-content-3">
+				<div class="ft-service-content-items-3">
+					<div class="row justify-content-center">
+						<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms"
+							style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+							<div class="ft-service-innerbox-3 position-relative">
+								<div class="ft-service-img position-relative">
+									<img src="{% static "img/service/ser4.jpg" %}" alt="">
+								</div>
+								<div class="ft-service-text-icon position-relative">
+									<div
+										class="ft-service-icon d-flex align-items-center justify-content-center position-absolute">
+										<i class="flaticon-plane"></i>
+									</div>
+									<div class="ft-service-text position-relative headline pera-content">
+										<h3><a href="ocean-freight-forwarding.html">Air Freight</a></h3>
+										<p>
+											As a leader in global air freight forwarding, couriermailingworldwide
+											excels in providing tailored transportation
+										</p>
+									</div>
+								</div>
+								<div class="more-btn position-absolute">
+									<a class="d-flex align-items-center justify-content-center text-uppercase"
+										href="ocean-freight-forwarding.html">
+										Learn more <i class="far fa-arrow-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms"
+							style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
+							<div class="ft-service-innerbox-3 position-relative">
+								<div class="ft-service-img position-relative">
+									<img src="{% static "img/service/ser6.jpg" %}" alt="">
+								</div>
+								<div class="ft-service-text-icon position-relative">
+									<div
+										class="ft-service-icon d-flex align-items-center justify-content-center position-absolute">
+										<i class="flaticon-boat"></i>
+									</div>
+									<div class="ft-service-text position-relative headline pera-content">
+										<h3><a href="ocean-freight-forwarding.html">Ocean Freight</a></h3>
+										<p>
+
+
+											Ocean Freight plays perhaps the most vital role in most transportation and
+											supply chain solutions.
+
+										</p>
+									</div>
+								</div>
+								<div class="more-btn position-absolute">
+									<a class="d-flex align-items-center justify-content-center text-uppercase"
+										href="ocean-freight-forwarding.html">
+										Learn more <i class="far fa-arrow-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms"
+							style="visibility: visible; animation-duration: 1500ms; animation-delay: 400ms; animation-name: fadeInUp;">
+							<div class="ft-service-innerbox-3 position-relative">
+								<div class="ft-service-img position-relative">
+									<img src="{% static "img/service/ser8.jpg" %}" alt="">
+								</div>
+								<div class="ft-service-text-icon position-relative">
+									<div
+										class="ft-service-icon d-flex align-items-center justify-content-center position-absolute">
+										<i class="flaticon-free-shipping"></i>
+									</div>
+									<div class="ft-service-text position-relative headline pera-content">
+										<h3><a href="road-freight-forwarding.html">Road Freight</a></h3>
+										<p>
+											Cargo are transported at some stage of their journey along the world's roads
+											where we give you a reassuring presence.
+										</p>
+									</div>
+								</div>
+								<div class="more-btn position-absolute">
+									<a class="d-flex align-items-center justify-content-center text-uppercase"
+										href="road-freight-forwarding.html">Learn more <i
+											class="far fa-arrow-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

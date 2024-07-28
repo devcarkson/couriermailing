@@ -1,0 +1,238 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Contact Us : Couriermailingworldwide | Express Delivery, Courier &amp; Shipping Services | Worlwide{% endblock %}
+
+{% block content %}
+
+	<!-- Start of Breadcrumb section
+	============================================= -->
+	<section id="ft-breadcrumb" class="ft-breadcrumb-section position-relative"
+		data-background="{% static "img/bg/bread-bg.jpg" %}">
+		<span class="background_overlay"></span>
+		<span class="design-shape position-absolute"><img src="{% static "img/shape/tmd-sh.html" %}" alt=""></span>
+		<div class="container">
+			<div class="ft-breadcrumb-content headline text-center position-relative">
+				<h2>Contact Us</h2>
+				<div class="ft-breadcrumb-list ul-li">
+					<ul>
+						<li><a href="{% url "index" %}">Home</a></li>
+						<li>Contact Us</li>
+					</ul>
+				</div>
+				 <!--message Alert-->
+				 <div class="alert-container">
+					{% if messages %}
+						{% for message in messages %}
+							<div class="alert alert-warning alert-dismissible fade show alert-timeout" role="alert">
+								<strong>Hello!</strong> {{ message }}.
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+						{% endfor %}
+					{% endif %}
+				</div>
+		
+				<script>
+					// Function to hide the alert after 9 seconds
+					setTimeout(function() {
+						var alerts = document.getElementsByClassName('alert-timeout');
+						for (var i = 0; i < alerts.length; i++) {
+							alerts[i].style.display = 'none';
+						}
+					}, 9000); 
+				</script>
+			</div>
+		</div>
+	</section>
+	<!-- End of Breadcrumb section
+	============================================= -->
+
+
+
+
+
+
+
+
+
+
+	<!-- Tracking Section -->
+	<section class="ft1-tracking-section">
+		<div class="auto-container">
+			<div class="inner-container">
+				<div class="row clearfix">
+					<!-- Tracking Column -->
+					<div class="tracking-column col-lg-7 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<!-- Tracking Form -->
+							<div class="tracking-form">
+								<form method="post" class="search-form" id="frmTrack" name="frmTrack" action="#"
+									onsubmit="return false">
+									<div class="form-group">
+										<input type="search" id="shipment_tracking_no" name="shipment_tracking_no"
+											value="" placeholder="Enter Your Tracking Number" required>
+										<button class="theme-btn btn-style-two" name="submitTrackNo"
+												onclick="trackNowFunc()">Track & Trace <span
+												class="icon fas fa-angle-double-right"></span></button>
+									</div>
+								</form>
+
+								{% comment %} <div id="loadingPop" style="display:none;">Loading...</div> {% endcomment %}
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+					<!-- Featured Column -->
+					<div class="featured-column col-lg-5 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<div class="row clearfix">
+
+								<!-- Feature Block -->
+								<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+									<div class="inner-box">
+										<div class="icon flaticon-discount"></div>
+										<h6>Affordable Premium Shipping!</h6>
+									</div>
+								</div>
+
+								<!-- Feature Block -->
+								<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+									<div class="inner-box">
+										<div class="icon flaticon-shield-2"></div>
+										<h6>Safe & Reliable <br> Courier Services!</h6>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Tracking Section -->
+
+
+
+
+
+	<!-- Start of contact page section
+	============================================= -->
+	<section id="ft-contact-page" class="ft-contact-page-section page-padding">
+		<div class="container">
+			<div class="ft-contact-page-content">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="ft-contact-page-text-wrapper">
+							<div class="ft-section-title-2 headline pera-content">
+								<span class="sub-title">Get a Quote</span>
+								<h2>Get in Touch
+								</h2>
+							</div>
+							<div class="ft-contact-page-contact-info">
+								<div class="ft-contact-cta-items d-flex">
+									<div class="ft-contact-cta-icon d-flex align-items-center justify-content-center">
+										<i class="fal fa-map-marker-alt"></i>
+									</div>
+									<div class="ft-contact-cta-text headline pera-content">
+										<h3>Office addresses</h3>
+										<p>
+											<b>Turkey Address</b><br> <hr>
+											2 Istanbul Sisli, Buyukdere Ave
+											34158 Istanbul, Buyukdere Ave<br> <br>
+
+											<b>Germany Address</b>  <br> <hr>
+											Thurn-und Taxis-Platz 6
+											D-60313 Frankfurt<br> <br>
+											<b>USA Address</b> <br> <hr>
+											952 Heritage Hills Rd
+											Decatur, Georgia(GA), 30033
+										</p>
+									</div>
+								</div>
+								<div class="ft-contact-cta-items d-flex">
+									<div class="ft-contact-cta-icon d-flex align-items-center justify-content-center">
+										<i class="fas fa-phone-alt"></i>
+									</div>
+									<div class="ft-contact-cta-text headline pera-content">
+										<h3>Telephone number</h3>
+										<p>+1 678 528 9797 <br>
+											+905358430689 <br>
+											+4915735984842</p>
+									</div>
+								</div>
+								<div class="ft-contact-cta-items d-flex">
+									<div class="ft-contact-cta-icon d-flex align-items-center justify-content-center">
+										<i class="far fa-envelope"></i>
+									</div>
+									<div class="ft-contact-cta-text headline pera-content">
+										<h3>Mail address</h3>
+
+										<p>couriermail@diplomats.com </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="ft-contact-page-form-wrapper headline">
+							<h3 class="text-center">Send Us A Mail</h3>
+
+							<form action="{% url 'contact' %}" class="form-group" method="post" id="contactForm" name="contactForm">
+								{% csrf_token %}
+								<div class="row">
+									<div class="col-lg-6">
+										<input type="text" name="name" id="name" placeholder="Your Name" required value="{{ form.name.value|default_if_none:'' }}">
+										{% if form.name.errors %}
+                                            <div class="text-danger">{{ form.name.errors }}</div>
+                                        {% endif %}
+									</div>
+									<div class="col-lg-6">
+										<input type="email" name="email" id="id_email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required value="{{ form.email.value|default_if_none:'' }}">
+                                        {% if form.email.errors %}
+                                            <div class="text-danger">{{ form.email.errors }}</div>
+                                        {% endif %}
+									</div>
+									<div class="col-lg-6">
+										<input type="text" name="subject" id="subject" placeholder="Subject" required value="{{ form.subject.value|default_if_none:'' }}">
+										{% if form.name.errors %}
+                                            <div class="text-danger">{{ form.name.errors }}</div>
+                                        {% endif %}
+									</div>
+									<div class="col-lg-6">
+										<input type="text" name="phonenumber" id="phonenumber" placeholder="Phone number" required value="{{ form.phonenumber.value|default_if_none:'' }}">
+										{% if form.name.errors %}
+                                            <div class="text-danger">{{ form.name.errors }}</div>
+                                        {% endif %}
+									</div>
+
+
+									<div class="col-lg-12">
+										<textarea name="message" rows="6" class="form-control" id="id_message" placeholder="" required>{{ form.message.value|default_if_none:'' }}</textarea>
+                                        {% if form.message.errors %}
+                                            <div class="text-danger">{{ form.message.errors }}</div>
+                                        {% endif %}
+									</div>
+									<div class="col-lg-12">
+										<button type="submit" class="form-control btn btn-primary">Send Message</button>
+										{% comment %} <button name="sendMessage" id="sendMessage" type="submit"
+											>Send Message</button>
+										<button type="reset" name="clear_form" id="clear_form" class="btn btn-primary"
+											style="display:none;">Clear Message</button> {% endcomment %}
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of contact page section
+	============================================= -->
+{% endblock %}

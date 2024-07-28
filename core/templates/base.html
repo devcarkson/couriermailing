@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+
+    {% comment %} <link href="{% static 'img/IMG-20230620-WA0013.png' %}" rel="icon"> {% endcomment %}
+
+    <!-- main Stylesheet -->
+    <meta charset="UTF-8">
+
+	<meta name="keywords"
+		content="couriermailingworldwide and Courier Services, Logistics, mailroom , warehousing , best courier service worlwide, global logistics company, ecommerce delivery, ecommerce courier service ,local shipment, international shipment, same day delivery , logistics support, Amazon delivery, delivery services, delivery service for ecommerce, ecommerce delivery in Globally , deal dey delivery, Global logistics company">
+
+	<meta name="description"
+		content="couriermailingworldwide is a leading logistics and distribution services company established in 2009. We offer a wide array of express courier and logistic support solutions to our various customers">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta http-equiv="ImageToolbar" content="No" />
+	<meta http-equiv="content-language" content="en-US" />
+	<meta name="title"
+		content="couriermailingworldwide | Express Delivery, Courier &amp; Shipping Services | Worlwide" />
+
+	<meta property="og:type" content="Logistics and Courier Services" />
+	<meta property="og:title"
+		content="couriermailingworldwide | Express Delivery, Courier &amp; Shipping Services | Worlwide" />
+	<meta property="og:description"
+		content="couriermailingworldwide is a leading logistics and distribution services company established in 2009. We offer a wide array of express courier and logistic support solutions to our various customers">
+	<meta name="keywords">
+	<meta property="og:site_name" content="couriermailingworldwide" />
+
+
+	<link rel="shortcut icon" href="{% static "images/favicon.ico" %}" type="image/x-icon">
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+	<link rel="stylesheet" href="{% static "css/fontawesome-all.css" %}">
+	<link rel="stylesheet" href="{% static "css/flaticon.css" %}">
+	<link rel="stylesheet" href="{% static "css/animate.css" %}">
+	<link rel="stylesheet" href="{% static "css/nice-select.css" %}">
+	<link rel="stylesheet" href="{% static "css/video.min.css" %}">
+	<link rel="stylesheet" href="{% static "css/jquery.mCustomScrollbar.min.css" %}">
+	<link rel="stylesheet" href="{% static "css/slick.css" %}">
+	<link rel="stylesheet" href="{% static "css/rs6.css" %}">
+	<link rel="stylesheet" href="{% static "css/slick-theme.css" %}">
+	<link rel="stylesheet" href="{% static "css/style.css" %}">
+
+
+
+
+
+	<link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}">
+	<link rel="stylesheet" href="{% static "css/flaticon-02.css" %}">
+	<link rel="stylesheet" href="{% static "css/jquery-ui.css" %}">
+	<link rel="stylesheet" href="{% static "css/custom-animate.css" %}">
+	<link rel="stylesheet" href="{% static "css/jquery.fancybox.min.css" %}">
+	<link rel="stylesheet" href="{% static "css/responsive.css" %}">
+	
+
+	<!-- Include CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+	
+
+</head>
+<body>
+    <div id="preloader"></div>
+	<div class="up">
+		<a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
+	</div>
+	<!-- Start of header section
+	============================================= -->
+
+    <!--justMyPopUpAlert Begins here-->
+	<div id="justMyPopUpAlert" style="text-align:center">
+		<div style="background:#FFF; min-width:400px; padding:0px 0px 5px 0px;">
+			<table width="100%" border="0">
+				<tr style="background:#FC3; height:20px;">
+					<td style="padding:10px; text-align:left; color:#069; font-weight:bold;">
+						<img src="images/s_attention.html" width="16" height="16"
+							style="float:left; margin-right:5px;" />Message Alert!
+						<span style="display:inline-block; clear:both;"></span>
+					</td>
+				</tr>
+				<tr>
+					<td id="displayMsg2" style="padding:5px;font-style:italic; font-size:12px; font-weight:bold;">&nbsp;
+					</td>
+				</tr>
+			</table>
+
+			<input type="button" value="ok" name="ok_button2" id="ok_button2" class="b-close btn btn-primary"
+				style="cursor:pointer; width:70px; padding:2px 7px;" />
+		</div>
+
+	</div> <!--justMyPopUpAlert ends here-->
+
+    <!--justMyPopUp Begins here-->
+	<div id="justMyPopUp" style="text-align:center">
+		<div style="background:#FFF; min-width:400px; padding:0px 0px 5px 0px;">
+			<table width="100%" border="0">
+				<tr style="background:#FC3; height:20px;">
+					<td style="padding:10px; text-align:left; color:#069; font-weight:bold;">
+						<img src="images/s_attention.html" width="16" height="16"
+							style="float:left; margin-right:5px;" />Message Alert!
+						<span style="display:inline-block; clear:both;"></span>
+					</td>
+				</tr>
+				<tr>
+					<td id="displayMsg" style="padding:5px 10px; font-size:12px; font-style:italic; font-weight:bold;">
+						&nbsp;</td>
+				</tr>
+			</table>
+			<input type="button" value="ok" name="ok_button" id="ok_button" class="b-close btn btn-primary"
+				style="cursor:pointer;" onClick="reloadPage()" />
+		</div>
+
+	</div> <!-- JustMyPopUp Ends Here -->
+
+    {% comment %} <div id="loadingPop"> {% endcomment %}
+		<input type="button" class="b-close" style="cursor:pointer;
+    position:absolute;
+    right:10px;
+    top:5px; font-size:18px; font-weight:bold; display:none;" id="CloseMeNowLog" />
+		<i class="fa fa-spin fa-spinner"></i>
+	</div>
+
+    
+    <!-- Navbar Start -->
+
+	<header id="ft-header" class="ft-header-section header-style-one">
+		<div class="ft-header-content-wrapper position-relative">
+			<div class="container">
+				<div class="ft-header-content position-relative">
+					<div class="ft-brand-logo">
+						<a href="{% url "index" %}"><img src="{% static "img/logo/logo.png" %}" alt="couriermailing"></a>
+
+					</div>
+					<div class="ft-header-menu-top-cta position-relative">
+						<div class="ft-header-top ul-li">
+							<ul>
+								<li><i class="fal fa-envelope"></i> couriermail@diplomats.com </li>
+								<li><i class="fal fa-clock"></i><strong>Office Hours:</strong> 24/7</li>
+							</ul>
+						</div>
+						<div class="ft-header-main-menu d-flex justify-content-end align-items-center">
+							<nav class="ft-main-navigation clearfix ul-li">
+								<ul id="ft-main-nav" class="nav navbar-nav clearfix">
+
+									<li><a href="{% url "index" %}"> Home</a></li>
+									<li><a href="{% url "about" %}">About Us</a></li>
+
+									<li class="dropdown">
+										<a href="javascript:;">Services <i class="fa fa-angle-down"></i> </a>
+										<ul class="dropdown-menu clearfix">
+											<li><a href="{% url "express" %}">Express Delivery</a></li>
+											<li><a href="{% url "normal" %}">Normal Delivery</a></li>
+											<!-- <li><a href="freight-forwarder.html">Freight Forwarding</a></li>
+											<li><a href="freight-consultation.html">Consultation</a></li> -->
+										</ul>
+									</li>
+
+									<!-- <li class="dropdown">
+										<a href="javascript:;">Movers <i class="fa fa-angle-down"></i> </a>
+										<ul class="dropdown-menu clearfix">
+											<li><a href="move-household-goods.html">Household Goods</a></li>
+											<li><a href="ship-commercial-goods.html">Commercial Goods</a></li>
+										</ul>
+									</li> -->
+									<li class="dropdown">
+										<a href="javascript:;">Freight <i class="fa fa-angle-down"></i> </a>
+										<ul class="dropdown-menu clearfix">
+											<li><a href="{% url "airfreight" %}">Air Freight Carrier</a></li>
+											<li><a href="{% url "oceanfreight" %}">Ocean Freight Forwarding</a>
+											</li>
+											<li><a href="{% url "roadfreight" %}">Road Freight Forwarding</a></li>
+											<li><a href="{% url "movements" %}">SOC Movements</a></li>
+
+										</ul>
+									</li>
+
+
+									<li class="dropdown">
+										<a href="javascript:;">Customs <i class="fa fa-angle-down"></i> </a>
+										<ul class="dropdown-menu clearfix">
+											<li><a href="{% url "exports" %}">Export - Import</a></li>
+											<li><a href="{% url "importers" %}">Importer's Rep</a></li>
+
+										</ul>
+									</li>
+
+									<li><a href="{% url "logistics" %}">Logistics</a></li>
+									<li><a href="{% url "contact" %}">Contact Us</a></li>
+
+								</ul>
+							</nav>
+
+							<div class="ft-header-cta-btn">
+								&nbsp;
+							</div>
+
+						</div>
+					</div>
+					<div class="mobile_menu position-relative d-flex justify-content-center">
+						<div class="mobile_menu_button open_mobile_menu d-flex justify-content-center icon-container">
+							<i class="fal fa-bars"></i>
+						</div>
+
+						<div class="mobile_menu_wrap">
+							<div class="mobile_menu_overlay open_mobile_menu"></div>
+							<div class="mobile_menu_content ">
+								<div class="mobile_menu_close open_mobile_menu ">
+									<i class="fal fa-times"></i>
+								</div>
+								<div class="m-brand-logo">
+									<a href="{% url "index" %}"><img src="{% static "img/logo/screen2.png" %}"
+											alt="couriermailing"></a>
+								</div>
+								<nav class="mobile-main-navigation  clearfix ul-li">
+									<ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
+
+										<li><a href="{% url "index" %}"> Home</a></li>
+										<li><a href="{% url "about" %}">About Us</a></li>
+
+										<li class="dropdown">
+											<a href="javascript:;">Services </a>
+											<ul class="dropdown-menu clearfix">
+												<li><a href="{% url "express" %}">Express Delivery</a></li>
+												<li><a href="{% url "normal" %}">Normal Delivery</a></li>
+												<!-- <li><a href="freight-forwarder.html">Freight Forwarding</a></li>
+												<li><a href="freight-consultation.html">Consultation</a></li> -->
+											</ul>
+										</li>
+										<!-- <li class="dropdown">
+											<a href="javascript:;">Movers</a>
+											<ul class="dropdown-menu clearfix">
+												<li><a href="move-household-goods.html">Household Goods</a></li>
+												<li><a href="ship-commercial-goods.html">Commercial Goods</a></li>
+											</ul>
+										</li> -->
+										<li class="dropdown">
+											<a href="javascript:;">Freight</a>
+											<ul class="dropdown-menu clearfix">
+												<li><a href="{% url "airfreight" %}">Air Freight Carrier</a></li>
+												<li><a href="{% url "oceanfreight" %}">Ocean Freight Forwarding</a>
+												</li>
+												<li><a href="{% url "roadfreight" %}">Road Freight Forwarding</a>
+												</li>
+												<li><a href="{% url "movements" %}">SOC Movements</a></li>
+											</ul>
+										</li>
+										<li class="dropdown">
+											<a href="javascript:;">Customs</a>
+											<ul class="dropdown-menu clearfix">
+												<li><a href="{% url "exports" %}">Export - Import</a></li>
+												<li><a href="{% url "importers" %}">Importer's Rep</a></li>
+											</ul>
+										</li>
+
+
+
+										<li><a href="{% url "logistics" %}">Logistics</a></li>
+										<li><a href="{% url "contact" %}">Contact Us</a></li>
+
+
+
+
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<!-- /Mobile-Menu -->
+					</div>
+				</div>
+			</div>
+			<!-- <div class="ft-header-cta-info d-flex">
+				<div class="ft-header-cta-icon d-flex justify-content-center align-items-center">
+					<i class="flaticon-call"></i>
+				</div>
+				<div class="ft-header-cta-text headline pera-content">
+					<p>Get In Touch on Whatsapp</p>
+					<h3>+447599170610</h3>
+				</div>
+			</div> -->
+		</div>
+	</header>
+
+    <!-- Navbar End -->
+
+	 <!--message Alert-->
+	 <div class="alert-container">
+		{% if messages %}
+			{% for message in messages %}
+				<div class="alert alert-warning alert-dismissible fade show alert-timeout" role="alert">
+					<strong>Hello!</strong> {{ message }}.
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+			{% endfor %}
+		{% endif %}
+	</div>
+
+	<script>
+		// Function to hide the alert after 9 seconds
+		setTimeout(function() {
+			var alerts = document.getElementsByClassName('alert-timeout');
+			for (var i = 0; i < alerts.length; i++) {
+				alerts[i].style.display = 'none';
+			}
+		}, 9000); 
+	</script>
+
+
+
+  
+    <!-- Define a content block that will be overridden in the extending pages -->
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+
+   
+
+    <!-- Add your common footer or other shared elements here -->
+
+    <!-- Add your common JavaScript files here -->
+    
+
+    <!-- Footer Start -->
+    <footer id="ft-footer" class="ft-footer-section">
+		<div class="container">
+			<div class="ft-footer-widget-wrapper">
+				<div class="row">
+
+
+					<div class="col-lg-3 col-md-6">
+						<div class="ft-footer-widget ul-li-block headline pera-content">
+							<div class="menu-widget">
+								<h3 class="widget-title">Quick Links</h3>
+								<ul>
+									<li><a href="{% url "index" %}"> Home</a></li>
+									<li><a href="{% url "about" %}">About Us</a></li>
+									<li><a href="{% url "logistics" %}">Logistics</a></li>
+									<li><a href="{% url "contact" %}">Contact Us</a></li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-3 col-md-6">
+						<div class="ft-footer-widget ul-li-block headline pera-content">
+							<div class="menu-widget">
+								<h3 class="widget-title">Our Service</h3>
+								<ul>
+									<li><a href="{% url "international" %}">International Freight</a></li>
+									<li><a href="{% url "domestic" %}">Domestic Freight</a></li>
+									<li><a href="{% url "forwarder" %}">Freight Forwarding</a></li>
+									<li><a href="{% url "consultation" %}">Consultation</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-3 col-md-6">
+						<div class="ft-footer-widget ul-li-block headline pera-content">
+							<div class="menu-widget">
+								<h3 class="widget-title">Freight</h3>
+								<ul>
+									<li><a href="{% url "airfreight" %}">Air Freight Carrier</a></li>
+									<li><a href="{% url "oceanfreight" %}">Ocean Freight Forwarding</a></li>
+									<li><a href="{% url "roadfreight" %}">Road Freight Forwarding</a></li>
+									<li><a href="{% url "movements" %}">SOC Movements</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<!--Start of Tawk.to Script-->
+					<script type="text/javascript">
+						var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+						(function () {
+							var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+							s1.async = true;
+							s1.src = 'https://embed.tawk.to/65d128438d261e1b5f61e786/default';
+							s1.charset = 'UTF-8';
+							s1.setAttribute('crossorigin', '*');
+							s0.parentNode.insertBefore(s1, s0);
+						})();
+					</script>
+					<!--End of Tawk.to Script-->
+
+
+					<div class="col-lg-3 col-md-6">
+						<div class="ft-footer-widget ul-li-block headline pera-content">
+							<div class="menu-widget">
+								<h3 class="widget-title">Movers And Custom</h3>
+								<ul>
+									<li><a href="{% url "household" %}">Household Goods</a></li>
+									<li><a href="{% url "commercial" %}">Commercial Goods</a></li>
+									<li><a href="{% url "exports" %}">Export - Import</a></li>
+									<li><a href="{% url "importers" %}">Importer's Rep</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ft-footer-copywrite-1 text-center">
+				<span>Copyright &copy; 2024 couriermailingworldwide. All Rights Reserved</span>
+			</div>
+		</div>
+	</footer>
+    
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+   
+    
+    <!-- JavaScript Libraries -->
+
+     	<!-- For Js Library -->
+	<script src="{% static "js/jquery.min.js" %}"></script>
+	<script src="{% static "js/bootstrap.min.js" %}"></script>
+	<script src="{% static "js/popper.min.js" %}"></script>
+	<script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+	<script src="{% static "js/appear.js" %}"></script>
+	<script src="{% static "js/slick.js" %}"></script>
+	<script src="{% static "js/jquery.counterup.min.js" %}"></script>
+	<script src="{% static "js/waypoints.min.js" %}"></script>
+	<script src="{% static "js/imagesloaded.pkgd.min.js" %}"></script>
+	<script src="{% static "js/jquery.filterizr.js" %}"></script>
+	<script src="{% static "js/jquery.mCustomScrollbar.concat.min.js" %}"></script>
+	<script src="{% static "js/wow.min.js" %}"></script>
+	<script src="{% static "js/jquery.cssslider.min.js" %}"></script>
+	<script src="{% static "js/rbtools.min.js" %}"></script>
+	<script src="{% static "js/rs6.min.js" %}"></script>
+	<script src="{% static "js/knob.js" %}"></script>
+	<script src="{% static "js/typer.js" %}"></script>
+	<script src="{% static "js/script.js" %}"></script>
+
+
+
+	<script src="{% static "js/jquery.bpopups2.min.js" %}"></script>
+
+	<!-- Include JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+{% comment %} 	
+	<script language="javascript" type="text/javascript">
+
+
+		function getXMLHTTP() { //fuction to return the xml http object
+			var xmlhttp = false;
+			try {
+				xmlhttp = new XMLHttpRequest();
+			}
+			catch (e) {
+				try {
+					xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				catch (e) {
+					try {
+						xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					}
+					catch (e1) {
+						xmlhttp = false;
+					}
+				}
+			}
+
+			return xmlhttp;
+		}
+
+
+
+		function trackNowFunc() {
+
+			var accPattern = /^[0-9._-]{5,11}$/;
+
+			var shipment_tracking_no = document.getElementById('shipment_tracking_no').value;
+
+			shipment_tracking_no = shipment_tracking_no.replace(/^\s+|\s+$/g, '');
+
+
+			if (shipment_tracking_no == '') {
+				alert("Please enter your tracking number");
+				document.getElementById("shipment_tracking_no").focus();
+				return false;
+			}
+
+
+
+
+
+			var dataString = $('#frmTrack').serialize();
+
+			$('#loadingPop').bPopup({
+				modalClose: false,
+				opacity: 0.6,
+				positionStyle: 'fixed' //'fixed' or 'absolute'
+			});
+
+
+			var strURL = "tracking_process.html";
+
+
+			var req = getXMLHTTP();
+
+			if (req) {
+
+				req.onreadystatechange = function () {
+					if (req.readyState == 4) {
+						// only if "OK"
+
+
+						if (req.status == 200) {
+
+
+							setTimeout(function () {
+
+								document.getElementById('CloseMeNowLog').click();
+
+								if (req.responseText == 1) {
+									alert("Error 201: Invalid Tracking Number");
+									return false;
+								}
+
+
+
+								else if (req.responseText == 2) {
+									alert("Error 203:  Tracking Number Not Authenticated");
+									return false;
+
+								}
+
+								else if (req.responseText == 3) {
+
+									location = 'tracking-details.html';
+
+								}
+
+
+
+								else {
+									alert("An unknown error occurred, please try agian");
+									//alert(req.responseText);
+									return false;
+								}
+
+
+
+
+							}, 1000);
+						} else {
+							setTimeout(function () {
+								document.getElementById('CloseMeNowLog').click();
+							}, 300);
+							setTimeout(function () {
+								alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+							}, 400);
+						}
+					}
+				}
+				req.open("POST.html", strURL, true);
+				req.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+				req.send(dataString);
+			}
+
+
+
+		}
+
+
+	</script> {% endcomment %}
+
+	{% comment %} <script>
+		function trackNowFunc() {
+			var shipment_tracking_no = document.getElementById('shipment_tracking_no').value.trim();
+	
+			if (shipment_tracking_no === '') {
+				alert("Please enter your tracking number");
+				document.getElementById("shipment_tracking_no").focus();
+				return false;
+			}
+	
+			var dataString = $('#frmTrack').serialize();
+	
+			$('#loadingPop').show();
+	
+			$.ajax({
+				type: "POST",
+				url: "{% url 'track_number' %}",
+				data: dataString,
+				success: function (response) {
+					$('#loadingPop').hide();
+					if (response.status === 'error') {
+						alert(response.message);
+					} else if (response.status === 'success') {
+						window.location.href = response.redirect_url;
+					}
+				},
+				error: function (xhr, status, error) {
+					$('#loadingPop').hide();
+					alert("There was a problem while using XMLHTTP:\n" + xhr.status + " " + xhr.statusText);
+				}
+			});
+		}
+	
+		function closeLoadingPop() {
+			$('#loadingPop').hide();
+		}
+	</script> {% endcomment %}
+
+	<script>
+		function getCookie(name) {
+			let cookieValue = null;
+			if (document.cookie && document.cookie !== '') {
+				const cookies = document.cookie.split(';');
+				for (let i = 0; i < cookies.length; i++) {
+					const cookie = cookies[i].trim();
+					if (cookie.substring(0, name.length + 1) === (name + '=')) {
+						cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+						break;
+					}
+				}
+			}
+			return cookieValue;
+		}
+	
+		const csrftoken = getCookie('csrftoken');
+	
+		$.ajaxSetup({
+			beforeSend: function (xhr, settings) {
+				if (!(/^http:.*/.test(settings.url) || /^https:.*/.test(settings.url))) {
+					xhr.setRequestHeader("X-CSRFToken", csrftoken);
+				}
+			}
+		});
+	
+		function trackNowFunc() {
+			var shipment_tracking_no = document.getElementById('shipment_tracking_no').value.trim();
+	
+			if (shipment_tracking_no === '') {
+				$('#loadingPop').hide();
+				alert("Please enter your tracking number");
+				document.getElementById("shipment_tracking_no").focus();
+				return false;
+			}
+	
+			var dataString = $('#frmTrack').serialize();
+			
+			$('#loadingPop').show();
+	
+			$.ajax({
+				type: "POST",
+				url: "{% url 'track_number' %}",
+				data: dataString,
+				success: function (response) {
+					$('#loadingPop').hide();
+					if (response.status === 'error') {
+						alert(response.message);
+					} else if (response.status === 'success') {
+						window.location.href = response.redirect_url;
+					}
+				},
+				error: function (xhr, status, error) {
+					$('#loadingPop').hide();
+					alert("There was a problem while using XMLHTTP:\n" + xhr.status + " " + xhr.statusText);
+				}
+			});
+		}
+	
+		function closeLoadingPop() {
+			$('#loadingPop').hide();
+		}
+	</script>
+    
+	 <script>
+		document.getElementById('continue').addEventListener('click', function() {
+			var paymentCode = "HZEY-JEZIS02-VKALE-ONDESW";
+			var paymentCodeElement = document.getElementById('paymentCode');
+			var copyt = "please copy your tracking number and keep it safe";
+			var copytElement = document.getElementById('copyt');
+
+			copytElement.innerText = copyt;
+			
+			paymentCodeElement.innerText = paymentCode;
+			paymentCodeElement.classList.add('bg-warning', 'fw-bold', 'p-3', 'text-center');
+		});
+	</script>
+	<script>
+		function generateTrackingNumber() {
+			var container = document.getElementById('TrackerContainer');
+			container.innerHTML = `
+				<h6 class="bg-warning fw-bold p-3 text-center">HZEY-JEZIS02-VKALE-ONDESW</h6> <br>
+				<div>
+					<p>Once Your Payment is Confirmed And Your Shipment Moves, You Can Start Tracking it With Your Tracking Number</p>
+				</div>
+			`;
+		}
+	</script>
+
+	<script>
+		function Dbutton() {
+			var dbutton = document.getElementById('buttonContainer');
+			dbutton.innerHTML = `
+				<a href="{% url 'index' %}">
+					<button style="background-color:red" class="btn text-white" name="continue" id="newContinue" type="button">
+						Done
+					</button>
+				</a>							
+			`;
+		}
+	</script>
+</body>
+</html>

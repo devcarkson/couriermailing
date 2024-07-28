@@ -1,0 +1,326 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Domestic Freight : Couriermailingworldwide | Express Delivery, Courier &amp; Shipping Services | Worlwide{% endblock %}
+
+{% block content %}
+
+	<!-- Start of Breadcrumb section
+	============================================= -->
+	<section id="ft-breadcrumb" class="ft-breadcrumb-section position-relative"
+		data-background="{% static "img/bg/bread-bg.jpg" %}">
+		<span class="background_overlay"></span>
+		<span class="design-shape position-absolute"><img src="{% static "img/shape/tmd-sh.html" %}" alt=""></span>
+		<div class="container">
+			<div class="ft-breadcrumb-content headline text-center position-relative">
+				<h2>Domestic Freight</h2>
+				<div class="ft-breadcrumb-list ul-li">
+					<ul>
+						<li><a href="{% url "index" %}">Home</a></li>
+						<li>Domestic Freight</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Breadcrumb section
+	============================================= -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Tracking Section -->
+	<section class="ft1-tracking-section">
+		<div class="auto-container">
+			<div class="inner-container">
+				<div class="row clearfix">
+					<!-- Tracking Column -->
+					<div class="tracking-column col-lg-7 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<!-- Tracking Form -->
+							<div class="tracking-form">
+								<form method="post" class="search-form" id="frmTrack" name="frmTrack" action="#"
+									onsubmit="return false">
+									<div class="form-group">
+										<input type="search" id="shipment_tracking_no" name="shipment_tracking_no"
+											value="" placeholder="Enter Your Tracking Number" required>
+										<button class="theme-btn btn-style-two" name="submitTrackNo"
+												onclick="trackNowFunc()">Track & Trace <span
+												class="icon fas fa-angle-double-right"></span></button>
+									</div>
+								</form>
+
+								{% comment %} <div id="loadingPop" style="display:none;">Loading...</div> {% endcomment %}
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+					<!-- Featured Column -->
+					<div class="featured-column col-lg-5 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<div class="row clearfix">
+
+								<!-- Feature Block -->
+								<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+									<div class="inner-box">
+										<div class="icon flaticon-discount"></div>
+										<h6>Affordable Premium Shipping!</h6>
+									</div>
+								</div>
+
+								<!-- Feature Block -->
+								<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+									<div class="inner-box">
+										<div class="icon flaticon-shield-2"></div>
+										<h6>Safe & Reliable <br> Courier Services!</h6>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Tracking Section -->
+
+
+
+
+
+
+
+	<!-- Start of About section
+	============================================= -->
+	<section id="ft-about" class="ft-about-section" style="padding-bottom:0px;">
+		<div class="container">
+			<div class="ft-about-content">
+				<div class="row">
+					<div class="col-lg-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+
+
+
+						<div class="ft-about-img-exp position-relative pt-0">
+
+
+
+
+							<div class="ft-about-img">
+								<img src="{% static "img/about/domestic.jpg" %}" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="ft-about-text-wrapper">
+							<div class="ft-section-title headline pera-content">
+								<span class="sub-title">The Expertise That</span>
+
+
+								<h2 style="font-size:24px;">
+									Support Your Domestic <br>Freight Forwarding Needs
+								</h2>
+
+
+
+
+
+								<p>
+									We combine our air, ocean, road and rail freight products with a range of specialty
+									services & expertise
+									to support your domestic freight forwarding needs. A choice of modes & service
+									levels that
+									allows you to customize handling and delivery of your goods domestically.
+								</p>
+
+
+
+
+							</div>
+
+
+
+
+
+
+
+
+
+
+							<div class="ft-about-feature-list-warpper">
+								<div class="ft-about-feature-list-item d-flex align-items-center wow fadeInUp"
+									data-wow-delay="0ms" data-wow-duration="1500ms">
+
+
+									<div class="ft-about-feature-text headline pera-content">
+										<h3>Understanding Domestic Freight</h3>
+										<p style="font-size:14px;">
+											Domestic freight is commonly referred to as road freight or freight
+											trucking. While some companies can also offer air freight shipping,
+											we offer domestic trucking, rail and intermodal, and ocean freight.
+										</p>
+
+										<br>
+
+										<p style="font-size:14px;">
+											Known for our expert handling of routine over-the-road shipments, We also
+											provide time-critical and
+											special freight services that require extra care or special handling
+											while still meeting your company's specific delivery time requirements.
+										</p>
+
+
+									</div>
+								</div>
+
+
+
+								<!--
+								<div class="ft-btn wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+									<a class="d-flex justify-content-center align-items-center" href="about.html">Explore More</a>
+								</div>
+								-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of About section
+	============================================= -->
+
+	<!-- Start of Service section
+	============================================= -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<section id="pr-sv-service" class="pr-sv-service-section">
+		<div class="container">
+			<div class="pr-sx-secion-title headline pera-content text-center wow fadeInUp" data-wow-delay="00ms"
+				data-wow-duration="1500ms"
+				style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+
+				<h2>
+					Over-The-Road Services
+				</h2>
+
+
+
+
+				<p>
+
+					Our wide range of domestic freight services will get your goods safely across
+					the city, state, or country, and over the road, by rail, or by sea.
+
+				</p>
+
+
+
+			</div>
+
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+	<!-- Start of why choose section
+	============================================= -->
+	<section id="ft-why-choose" class="ft-why-choose-section position-relative"
+		data-background="{% static "img/bg/wc-bg.jpg" %}">
+		<div class="container">
+			<div class="ft-why-choose-content">
+				<div class="row justify-content-end">
+					<div class="col-lg-7">
+						<div class="ft-why-choose-text-area pt-5">
+							<div class="ft-section-title headline pera-content wow fadeInUp" data-wow-delay="0ms"
+								data-wow-duration="1500ms">
+								<span class="sub-title">Domestic Ocean</span>
+								<h2>Freight Services</h2>
+							</div>
+							<div class="ft-why-choose-feature-wrapper">
+								<div class="ft-why-choose-feature-item d-flex align-items-center wow fadeInUp"
+									data-wow-delay="200ms" data-wow-duration="1500ms">
+									<div
+										class="ft-why-choose-feature-icon d-flex align-items-center justify-content-center position-relative">
+										<i class="flaticon-logistics"></i>
+									</div>
+									<div class="ft-why-choose-feature-text headline pera-content">
+										<h3>Full Container FCL</h3>
+										<p>
+											We offer you Full-Container-Load (FCL) Ocean Freight options to provide
+											reliable,
+											flexible & cost efficient transportation globally.
+										</p>
+									</div>
+								</div>
+								<div class="ft-why-choose-feature-item d-flex align-items-center wow fadeInUp"
+									data-wow-delay="400ms" data-wow-duration="1500ms">
+									<div
+										class="ft-why-choose-feature-icon d-flex align-items-center justify-content-center position-relative">
+										<i class="flaticon-logistics"></i>
+									</div>
+									<div class="ft-why-choose-feature-text headline pera-content">
+										<h3>Less Than Full Container LCL</h3>
+										<p>
+											couriermailingworldwide offers weekly LCL services across major trade
+											routes.
+											Our team of experts handle your shipments end-to-end through our strong
+											global network
+										</p>
+									</div>
+								</div>
+								<div class="ft-why-choose-feature-item d-flex align-items-center wow fadeInUp"
+									data-wow-delay="600ms" data-wow-duration="1500ms">
+									<div
+										class="ft-why-choose-feature-icon d-flex align-items-center justify-content-center position-relative">
+										<i class="flaticon-logistics"></i>
+									</div>
+									<div class="ft-why-choose-feature-text headline pera-content">
+										<h3>Door to Door</h3>
+										<p>
+											We offer a wide selection of door-to-door services for shipping any item.
+											From simple parcel delivery to complex freight requirements.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of of why choose section
+	============================================= -->
+{% endblock %}

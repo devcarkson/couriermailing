@@ -1,0 +1,258 @@
+from django.http import BadHeaderError, HttpResponse
+from django.shortcuts import redirect, render
+from . models import *
+from django.core.mail import send_mail
+from django.contrib import messages
+from django.http import JsonResponse
+
+# Create your views here.
+
+# Create your views here.
+
+def index(request):
+    context = {}
+    return render(request, 'index.html', context)
+
+
+def about(request):
+    context = {}
+    return render(request, 'about-us.html', context)
+
+# core/views.py
+from django.shortcuts import render, redirect
+from django.http import HttpResponseRedirect
+
+
+
+def express(request):
+    if request.method == 'POST':
+        sender_data = {
+            'name': request.POST.get('name'),
+            'email': request.POST.get('email'),
+            'weight': request.POST.get('weight'),
+            'phonenumber': request.POST.get('phonenumber'),
+            'address': request.POST.get('address'),
+            'description': request.POST.get('description')
+        }
+
+        receiver_data = {
+            'name': request.POST.get('rec_name'),
+            'email': request.POST.get('rec_email'),
+            'phonenumber': request.POST.get('rec_phonenumber'),
+            'address': request.POST.get('rec_address')
+        }
+
+        # Debug: Print the form data
+        print('Sender Data:', sender_data)
+        print('Receiver Data:', receiver_data)
+
+        # Basic validation
+        if all(sender_data.values()) and all(receiver_data.values()):
+            sender = ExpressSender.objects.create(**sender_data)
+            receiver = ExpressReceiver.objects.create(**receiver_data)
+
+            request.session['sender_id'] = sender.id
+            request.session['receiver_id'] = receiver.id
+
+            return redirect('payment')  # Redirect to the payment page
+        else:
+            return render(request, 'express.html', {'error': 'Please fill all fields'})
+
+    return render(request, 'express.html')
+
+
+
+
+def normal(request):
+    if request.method == 'POST':
+        nsender_data = {
+            'name': request.POST.get('name'),
+            'email': request.POST.get('email'),
+            'weight': request.POST.get('weight'),
+            'phonenumber': request.POST.get('phonenumber'),
+            'address': request.POST.get('address'),
+            'description': request.POST.get('description')
+        }
+
+        nreceiver_data = {
+            'name': request.POST.get('rec_name'),
+            'email': request.POST.get('rec_email'),
+            'phonenumber': request.POST.get('rec_phonenumber'),
+            'address': request.POST.get('rec_address')
+        }
+
+        # Debug: Print the form data
+        print('Normal Sender Data:', nsender_data)
+        print('Normal Receiver Data:', nreceiver_data)
+
+        # Basic validation
+        if all(nsender_data.values()) and all(nreceiver_data.values()):
+            nsender = Normalsender.objects.create(**nsender_data)
+            nreceiver = Normalreceiver.objects.create(**nreceiver_data)
+
+            request.session['nsender_id'] = nsender.id
+            request.session['nreceiver_id'] = nreceiver.id
+
+            return redirect('payments')  
+        else:
+            return render(request, 'normal.html', {'error': 'Please fill all fields'})
+
+    return render(request, 'normal.html')
+
+
+# from django.shortcuts import render, redirect
+# from .forms import *
+# from .models import *
+
+# def normal(request):
+#     if request.method == 'POST':
+#         nsender_form = NormalSenderForm(request.POST)
+#         nreceiver_form = NormalReceiverForm(request.POST)
+
+#         if nsender_form.is_valid() and nreceiver_form.is_valid():
+#             nsender = nsender_form.save()
+#             nreceiver = nreceiver_form.save()
+
+#             request.session['nsender_id'] = nsender.id
+#             request.session['nreceiver_id'] = nreceiver.id
+
+#             return redirect('payment')  # Redirect to the payment page
+#         else:
+#             print('Sender Form Errors:', nsender_form.errors)
+#             print('Receiver Form Errors:', nreceiver_form.errors)
+#     else:
+#         nsender_form = NormalSenderForm()
+#         nreceiver_form = NormalReceiverForm()
+
+#     return render(request, 'normal.html', {'nsender_form': nsender_form, 'nreceiver_form': nreceiver_form})
+
+
+
+
+
+
+def payment(request):
+    sender_id = request.session.get('sender_id')
+    receiver_id = request.session.get('receiver_id')
+
+    sender_data = ExpressSender.objects.get(id=sender_id) if sender_id else None
+    receiver_data = ExpressReceiver.objects.get(id=receiver_id) if receiver_id else None
+
+    if sender_data:
+        weight = float(sender_data.weight)
+        cost = weight * 3.50
+        formatted_cost = f"{cost:.2f}"
+    else:
+        weight = 0
+        cost = 0
+        formatted_cost = f"{cost:.2f}"
+
+    return render(request, 'payment.html', {
+        'sender_data': sender_data,
+        'receiver_data': receiver_data,
+        'cost': formatted_cost,
+        # 'formatted_cost':formatted_cost
+    })
+
+
+
+def payments(request):
+    sender_id = request.session.get('sender_id')
+    receiver_id = request.session.get('receiver_id')
+
+    sender_data = Normalsender.objects.get(id=sender_id) if sender_id else None
+    receiver_data = Normalreceiver.objects.get(id=receiver_id) if receiver_id else None
+
+    if sender_data:
+        weight = float(sender_data.weight)
+        cost = weight * 3.50
+        formatted_cost = f"{cost:.2f}"
+    else:
+        weight = 0
+        cost = 0
+        formatted_cost = f"{cost:.2f}"
+
+    return render(request, 'payments.html', {
+        'sender_data': sender_data,
+        'receiver_data': receiver_data,
+        'cost': formatted_cost,
+        # 'formatted_cost':formatted_cost
+    })
+
+
+
+def oceanfreight(request):
+    context = {}
+    return render(request, 'ocean-freight-forwarding.html', context)
+
+def airfreight(request):
+    context = {}
+    return render(request, 'air-freight-carrier.html', context)
+
+def roadfreight(request):
+    context = {}
+    return render(request, 'road-freight-forwarding.html', context)
+
+def movements(request):
+    context = {}
+    return render(request, 'soc-movements.html', context)
+
+def importers(request):
+    context = {}
+    return render(request, 'importers-logistics-rep.html', context)
+
+def exports(request):
+    context = {}
+    return render(request, 'export-import.html', context)
+
+def logistics(request):
+    context = {}
+    return render(request, 'logistics.html', context)
+
+def contact(request):
+    context = {}
+    return render(request, 'contact-us.html', context)
+
+def household(request):
+    context = {}
+    return render(request, 'move-household-goods.html', context)
+
+def commercial(request):
+    context = {}
+    return render(request, 'ship-commercial-goods.html', context)
+
+def international(request):
+    context = {}
+    return render(request, 'international-freight.html', context)
+
+def domestic(request):
+    context = {}
+    return render(request, 'domestic-freight.html', context)
+
+def forwarder(request):
+    context = {}
+    return render(request, 'freight-forwarder.html', context)
+
+def consultation(request):
+    context = {}
+    return render(request, 'freight-consultation.html', context)
+
+
+def track_number(request):
+    if request.method == 'POST':
+        tracking_number = request.POST.get('shipment_tracking_no', '').strip()
+        if not tracking_number:
+            return JsonResponse({'status': 'error', 'message': 'Please enter your tracking number'}, status=400)
+
+        # Validate tracking number (add your logic here)
+        if tracking_number == '1':
+            return JsonResponse({'status': 'error', 'message': 'Error 201: Invalid Tracking Number'})
+        elif tracking_number == '2':
+            return JsonResponse({'status': 'error', 'message': 'Error 203: Tracking Number Not Authenticated'})
+        elif tracking_number == '3':
+            return JsonResponse({'status': 'success', 'redirect_url': 'tracking-details.html'})
+        else:
+            return JsonResponse({'status': 'error', 'message': 'An unknown error occurred, please try again'})
+
+    return JsonResponse({'status': 'error', 'message': 'Invalid request method'}, status=405)
+

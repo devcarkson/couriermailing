@@ -1,0 +1,364 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Move Household Goods : Couriermailingworldwide | Express Delivery, Courier &amp; Shipping Services | Worlwide{% endblock %}
+
+{% block content %}
+<!-- Start of Breadcrumb section
+	============================================= -->
+	<section id="ft-breadcrumb" class="ft-breadcrumb-section position-relative" data-background="{% static "img/bg/bread-bg.jpg" %}">
+		<span class="background_overlay"></span>
+		<span class="design-shape position-absolute"><img src="{% static "img/shape/tmd-sh.html" %}" alt=""></span>
+		<div class="container">
+			<div class="ft-breadcrumb-content headline text-center position-relative">
+				<h2>Move Household Goods</h2>
+				<div class="ft-breadcrumb-list ul-li">
+					<ul>
+						<li><a href="{% url "index" %}">Home</a></li>
+						<li>Move Household Goods</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>	
+<!-- End of Breadcrumb section
+	============================================= -->
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Tracking Section -->
+		<section class="ft1-tracking-section">
+			<div class="auto-container">
+				<div class="inner-container">
+					<div class="row clearfix">
+						<!-- Tracking Column -->
+						<div class="tracking-column col-lg-7 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<!-- Tracking Form -->
+								<div class="tracking-form">
+									<form method="post" class="search-form" id="frmTrack" name="frmTrack" action="#"
+									onsubmit="return false">
+									<div class="form-group">
+										<input type="search" id="shipment_tracking_no" name="shipment_tracking_no"
+											value="" placeholder="Enter Your Tracking Number" required>
+										<button class="theme-btn btn-style-two" name="submitTrackNo"
+												onclick="trackNowFunc()">Track & Trace <span
+												class="icon fas fa-angle-double-right"></span></button>
+									</div>
+								</form>
+
+								{% comment %} <div id="loadingPop" style="display:none;">Loading...</div> {% endcomment %}
+								</div>
+							</div>
+						</div>
+						
+						
+						
+						
+						
+						<!-- Featured Column -->
+						<div class="featured-column col-lg-5 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<div class="row clearfix">
+								
+									<!-- Feature Block -->
+									<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+										<div class="inner-box">
+											<div class="icon flaticon-discount"></div>
+											<h6>Affordable Premium Shipping!</h6>
+										</div>
+									</div>
+									
+									<!-- Feature Block -->
+									<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+										<div class="inner-box">
+											<div class="icon flaticon-shield-2"></div>
+											<h6>Safe & Reliable <br> Courier Services!</h6>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Tracking Section -->
+
+		
+
+		
+	
+
+<!-- Start of About section
+	============================================= -->
+	<section id="ft-about" class="ft-about-section">
+		<div class="container">
+			<div class="ft-about-content">
+				<div class="row">
+					<div class="col-lg-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="ft-about-img-exp position-relative">
+							<div class="ft-about-exp-area headline pera-content position-absolute">
+								<div class="ft-about-exp-img">
+									<img src="{% static "img/shape/exp-sh1.png" %}" alt="">
+								</div>
+								<div class="ft-about-exp-text position-absolute">
+									<h3><span class="counter">10</span><b>+</b> 
+									Years</h3>
+									<p>
+									Of Excellent Service
+									</p>
+								</div>
+							</div>
+							<div class="ft-about-img">
+								<img src="{% static "img/about/ab1.png" %}" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="ft-about-text-wrapper">
+							<div class="ft-section-title headline pera-content">
+								<span class="sub-title">Household Goods Movers</span>
+								<h2>
+								 Local and Long Distance
+								</h2>
+								<p>
+								couriermailingworldwide is the right household goods moving company for a stress free, smooth and easy relocation.
+								We provide reliable Domestic and International Household Goods Moving Services with the help of our expert Professionals. 
+								</p>
+							</div>
+							<div class="ft-about-feature-list-warpper">
+								<div class="ft-about-feature-list-item d-flex align-items-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+									<div class="ft-about-feature-icon d-flex align-items-center justify-content-center">
+										<i class="flaticon-worldwide"></i>
+									</div>
+									<div class="ft-about-feature-text headline pera-content">
+										<h3>Air Transportation of Household Goods:</h3>
+										
+		<p style="font-size:13px; line-height:26px;">
+		 Customer may wish to move essential items by Air Freight. Moving by Air Freight is fast and enables those 
+		 important to access quickly by customer. 
+		</p>								
+										
+									</div>
+								</div>
+								<div class="ft-about-feature-list-item d-flex align-items-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+									<div class="ft-about-feature-icon d-flex align-items-center justify-content-center">
+										<i class="flaticon-boat"></i>
+									</div>
+									<div class="ft-about-feature-text headline pera-content">
+										<h3>Ocean Transportation of Household Goods:</h3>
+										
+										
+										<p style="font-size:13px; line-height:26px;">
+For Long distance international move we provide containerized ocean shipping of your household goods. 
+										</p>
+									</div>
+								</div>
+								
+								
+								
+								
+								
+								
+								
+								
+		<div class="ft-about-feature-list-item d-flex align-items-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+									<div class="ft-about-feature-icon d-flex align-items-center justify-content-center">
+										<i class="flaticon-plane"></i>
+									</div>
+									<div class="ft-about-feature-text headline pera-content">
+										<h3>Air Transportation of Household Goods:</h3>
+										
+										
+										<p style="font-size:13px; line-height:26px;">
+										Customer may wish to move essential items by Air Freight. Moving by Air Freight is 
+										fast and enables those important to access quickly by customer.
+										</p>
+									</div>
+								</div>
+						
+								
+								
+		
+
+
+
+<div class="ft-about-feature-list-item d-flex align-items-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+									<div class="ft-about-feature-icon d-flex align-items-center justify-content-center">
+										<i class="flaticon-logistics"></i>
+									</div>
+									<div class="ft-about-feature-text headline pera-content">
+										<h3>Road Transportation of Household Goods:</h3>
+										
+										
+										<p style="font-size:13px; line-height:26px;">
+										We also transport customer's household goods via roads. We try maximum to deliver 
+										the goods within the stipulated time frame and safety.
+										</p>
+									</div>
+								</div>						
+								
+								
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- End of About section
+	============================================= -->
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="ft-goodness-feature" class="ft-goodness-feature-section" data-background="{% static "img/bg/shape-bg.jpg" %}" style="background-image: url({% static "img/bg/shape-bg.html" %}); padding-top: 60px;">
+		<div class="container">
+			<div class="ft-section-title-2 headline pera-content text-center">
+
+				<h2>Moving and Relocating</h2>
+				
+
+
+
+<div style="text-align:left">
+<p style="font-size:13px; line-height:26px;">
+Understanding all the details pertaining to the packing of the household goods, 
+we offer safe and prompt relocating services. Once the task is handled to us, 
+we relieve customers from all worries, by providing on time delivery at customer's doorstep.
+
+</p>
+
+
+
+
+</div>
+
+			</div>
+			
+					</div>
+	</section>
+
+
+
+
+
+
+
+
+<!-- Start of why choose section
+	============================================= -->
+	<section id="ft-why-choose" class="ft-why-choose-section position-relative" data-background="{% static "img/bg/wc-bg.jpg" %}">
+		<div class="container">
+			<div class="ft-why-choose-content">
+				<div class="row justify-content-end">
+					<div class="col-lg-7">
+						<div class="ft-why-choose-text-area" style="padding-top:60px;">
+							<div class="ft-section-title headline pera-content wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+								<h2>
+Household goods moving services are divided into Four Categories:
+								</h2>
+							</div>
+							<div class="ft-why-choose-feature-wrapper">
+								<div class="ft-why-choose-feature-item d-flex align-items-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+									<div class="ft-why-choose-feature-icon d-flex align-items-center justify-content-center position-relative">
+										<i class="flaticon-double-right-arrows-angles"></i>
+									</div>
+									<div class="ft-why-choose-feature-text headline pera-content">
+										<h3>Packing:</h3>
+										<p style="font-size:13px; line-height:26px;">
+										The major concern of the packers and movers is to pack customers goods in such a 
+										manner so that they can reach the customers destination safely. 
+										</p>
+									</div>
+								</div>
+								
+								
+								<div class="ft-why-choose-feature-item d-flex align-items-center wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+									<div class="ft-why-choose-feature-icon d-flex align-items-center justify-content-center position-relative">
+										<i class="flaticon-double-right-arrows-angles"></i>
+									</div>
+									<div class="ft-why-choose-feature-text headline pera-content">
+										<h3>Moving and Relocating:</h3>
+										
+										<p style="font-size:13px; line-height:26px;">
+										Understanding all the details pertaining to the packing of the household goods, 
+										we offer safe and prompt relocating services. 
+										</p>
+									</div>
+								</div>
+								
+								
+								<div class="ft-why-choose-feature-item d-flex align-items-center wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+									<div class="ft-why-choose-feature-icon d-flex align-items-center justify-content-center position-relative">
+										<i class="flaticon-double-right-arrows-angles"></i>
+									</div>
+									<div class="ft-why-choose-feature-text headline pera-content">
+										<h3>Transportation:</h3>
+										<p style="font-size:13px; line-height:26px;">
+										We provide door to door transportation service to our customers. Our transporting vehicles are well maintained. 
+										</p>
+									</div>
+									
+								</div>
+								
+								
+								
+								
+								
+								
+		<div class="ft-why-choose-feature-item d-flex align-items-center wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+									<div class="ft-why-choose-feature-icon d-flex align-items-center justify-content-center position-relative">
+										<i class="flaticon-double-right-arrows-angles"></i>
+									</div>
+									<div class="ft-why-choose-feature-text headline pera-content">
+										<h3>Loading and Unloading:</h3>
+										<p style="font-size:13px; line-height:26px;">
+All the Loading and Unloading activities are done under experiences 
+supervision and carried out by well trained workers.
+</p>
+									</div>
+									
+									
+								</div>
+						
+								
+								
+								
+								
+								
+								
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- End of of why choose section
+	============================================= -->	
+
+{% endblock %}

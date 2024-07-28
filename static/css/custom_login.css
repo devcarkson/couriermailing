@@ -1,0 +1,29 @@
+body{
+    /* background-color: darkslategrey; */
+}
+body.login {
+    background-color: #007BFF; /* Change background to blue */
+}
+
+.login-box {
+    border: none; /* Change box border to blue */
+}
+
+.login-logo a {
+    color: #007BFF; /* Change logo text to blue */
+}
+
+.card {
+    border: none; /* Change card border to blue */
+    background-color: #0f1477;
+}
+
+.login-box-msg{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.btn-outline-primary:hover{
+  background-color: red;
+} 

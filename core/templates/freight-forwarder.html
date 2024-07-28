@@ -1,0 +1,233 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Freight Forwarding : Couriermailingworldwide | Express Delivery, Courier &amp; Shipping Services | Worlwide{% endblock %}
+
+{% block content %}
+
+<!-- Start of Breadcrumb section
+	============================================= -->
+	<section id="ft-breadcrumb" class="ft-breadcrumb-section position-relative" data-background="{% static "img/bg/bread-bg.jpg" %}">
+		<span class="background_overlay"></span>
+		<span class="design-shape position-absolute"><img src="{% static "img/shape/tmd-sh.html" %}" alt=""></span>
+		<div class="container">
+			<div class="ft-breadcrumb-content headline text-center position-relative">
+				<h2>Freight Forwarding</h2>
+				<div class="ft-breadcrumb-list ul-li">
+					<ul>
+						<li><a href="{% url "index" %}">Home</a></li>
+						<li>Freight Forwarding</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>	
+<!-- End of Breadcrumb section
+	============================================= -->
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Tracking Section -->
+		<section class="ft1-tracking-section">
+			<div class="auto-container">
+				<div class="inner-container">
+					<div class="row clearfix">
+						<!-- Tracking Column -->
+						<div class="tracking-column col-lg-7 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<!-- Tracking Form -->
+								<div class="tracking-form">
+									<form method="post" class="search-form" id="frmTrack" name="frmTrack" action="#"
+									onsubmit="return false">
+									<div class="form-group">
+										<input type="search" id="shipment_tracking_no" name="shipment_tracking_no"
+											value="" placeholder="Enter Your Tracking Number" required>
+										<button class="theme-btn btn-style-two" name="submitTrackNo"
+												onclick="trackNowFunc()">Track & Trace <span
+												class="icon fas fa-angle-double-right"></span></button>
+									</div>
+								</form>
+
+								{% comment %} <div id="loadingPop" style="display:none;">Loading...</div> {% endcomment %}
+								</div>
+							</div>
+						</div>
+						
+						
+						
+						
+						
+						<!-- Featured Column -->
+						<div class="featured-column col-lg-5 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<div class="row clearfix">
+								
+									<!-- Feature Block -->
+									<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+										<div class="inner-box">
+											<div class="icon flaticon-discount"></div>
+											<h6>Affordable Premium Shipping!</h6>
+										</div>
+									</div>
+									
+									<!-- Feature Block -->
+									<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+										<div class="inner-box">
+											<div class="icon flaticon-shield-2"></div>
+											<h6>Safe & Reliable <br> Courier Services!</h6>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Tracking Section -->
+
+
+
+		
+
+<!-- Start of About section
+	============================================= -->
+	<section id="ft-thx-about" class="ft-thx-about-section" style="padding-top:90px;">
+		<div class="container">
+			<div class="pr-cor-about-content">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="pr-cor-about-text-wrap">
+							
+							
+							
+							
+							
+							<div class="pr-cor-about-feature-area">
+								<div class="pr-cor-about-feature-list d-flex align-items-center wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+									<div class="pr-cor-about-ft-icon d-flex align-items-center justify-content-center">
+										<i class="flaticon-worldwide"></i>
+									</div>
+									<div class="pr-cor-about-ft-text headline pera-content">
+									
+									
+																		
+								<h3>Fast Worldwide Delivery</h3>
+								
+								
+								
+								
+										
+						<p>
+						We have the freight management expertise, the infrastructure and the global network to move your cargo 
+						wherever you need it to go, via air, road and sea.
+						</p>
+						
+						<br>
+						
+							
+		<p>
+		With comprehensive air, ocean, road and intermodal freight solutions that can meet any import and export requirements, 
+		we offer customers in the US fully integrated global and domestic freight services.
+		</p>
+		
+		
+		
+		<h2 style="font-size:24px; margin-top:40px; line-height:36px;">
+								Freight Right offers full-service global forwarding in over 180 countries and 
+								900,000 origins, with any mode and commodity.
+								</h2>	
+		
+		
+		
+									</div>
+								</div>
+								
+								
+								
+								
+								<div class="pr-cor-about-feature-list d-flex align-items-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+			<div class="pr-cor-about-ft-text headline pera-content">
+			
+			
+			
+		
+		
+					
+			
+
+									</div>
+								</div>
+							</div>
+							
+							<!--
+							<div class="ft-thx-btn text-center wow flipInX" data-wow-delay="200ms" data-wow-duration="1500ms">
+								<a class="d-flex justify-content-center align-items-center" href="#">Explore More</a>
+							</div>
+							-->
+						</div>
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="col-lg-6">
+						<div class="pr-cor-about-img-wrap position-relative">
+							<div class="pr-cor-about-img-area">
+								<img src="{% static "imgs/about/ab1.jpg" %}" alt="">
+							</div>
+							<div class="pr-cor-about-img-shape position-absolute">
+								<img src="{% static "imgs/shape/ab-sh1.png" %}" alt="">
+							</div>
+							<div class="pr-cor-about-img-area2 position-absolute">
+								<img src="{% static "imgs/about/ab2.jpg" %}" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- End of About section
+	============================================= -->
+
+<!-- Start of Service section
+	============================================= -->
+	<section id="pr-cor-service" class="pr-cor-service-section position-relatives">
+		<span class="map-bg position-absolute"><img src="{% static "imgs/bg/map.png" %}" alt=""></span>
+		<div class="container">
+			<div class="pr-cor-section-title headline pera-content middle-align text-center  wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms" style="max-width:800px;">
+				
+				
+				
+				<h2 style="font-size:20px; line-height:30px;">
+ We, as being a licensed Freight Forwarder for Domestic (DOT) & International (FMC & IATA) shipping, not only act on behalf of 
+ them in arranging transportation services 
+ but also facilitate documentation & other related services required by them to complete their sales transaction. 				
+				</h2>
+			
+			
+			
+			
+			</div>
+			
+			
+				
+		</div>
+	</section>		
+<!-- End of Service section
+	============================================= -->
+{% endblock %}

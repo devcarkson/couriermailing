@@ -1,0 +1,241 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}About Us : Couriermailingworldwide | Express Delivery, Courier &amp; Shipping
+Services | Worlwide{% endblock %}
+
+{% block content %}
+
+	<!-- Start of Breadcrumb section
+	============================================= -->
+	<section id="ft-breadcrumb" class="ft-breadcrumb-section position-relative"
+		data-background="{% static "img/bg/bread-bg.jpg" %}">
+		<span class="background_overlay"></span>
+		<span class="design-shape position-absolute"><img src="{% static "img/shape/tmd-sh.html" %}" alt=""></span>
+		<div class="container">
+			<div class="ft-breadcrumb-content headline text-center position-relative">
+				<h2>About Us</h2>
+				<div class="ft-breadcrumb-list ul-li">
+					<ul>
+						<li><a href="{% url "index" %}">Home</a></li>
+						<li>About Us</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Breadcrumb section
+	============================================= -->
+
+
+
+
+	<!-- Tracking Section -->
+	<section class="ft1-tracking-section">
+		<div class="auto-container">
+			<div class="inner-container">
+				<div class="row clearfix">
+					<!-- Tracking Column -->
+					<div class="tracking-column col-lg-7 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<!-- Tracking Form -->
+							<div class="tracking-form">
+								<form method="post" class="search-form" id="frmTrack" name="frmTrack" action="#"
+									onsubmit="return false">
+									<div class="form-group">
+										<input type="search" id="shipment_tracking_no" name="shipment_tracking_no"
+											value="" placeholder="Enter Your Tracking Number" required>
+										<button class="theme-btn btn-style-two" name="submitTrackNo"
+												onclick="trackNowFunc()">Track & Trace <span
+												class="icon fas fa-angle-double-right"></span></button>
+									</div>
+								</form>
+
+								{% comment %} <div id="loadingPop" style="display:none;">Loading...</div> {% endcomment %}
+							</div>
+						</div>
+					</div>
+
+
+
+					<!-- Featured Column -->
+					<div class="featured-column col-lg-5 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<div class="row clearfix">
+
+								<!-- Feature Block -->
+								<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+									<div class="inner-box">
+										<div class="icon flaticon-discount"></div>
+										<h6>Affordable Premium Shipping!</h6>
+									</div>
+								</div>
+
+								<!-- Feature Block -->
+								<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+									<div class="inner-box">
+										<div class="icon flaticon-shield-2"></div>
+										<h6>Safe & Reliable <br> Courier Services!</h6>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Tracking Section -->
+
+
+
+
+
+
+
+	<!-- Welcome Section -->
+	<section class="ft1-welcome-section">
+		<div class="pattern-layer" style="background-image:url({% static "images/background/pattern-1.png" %})"></div>
+		<div class="auto-container">
+			<div class="inner-container">
+				<div class="row clearfix">
+
+					<!-- Image Column -->
+					<div class="image-column col-lg-6 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<div class="image">
+								<img src="{% static "images/resource/welcome.jpg" %}" alt="" />
+								<div class="year-box">
+									<div class="box-inner">
+										<span class="icon flaticon-link"></span>
+										<strong>10+ Years</strong>
+										Of Excellent Services
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Content Column -->
+					<div class="content-column col-lg-6 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<div class="sec-title">
+								<div class="title">couriermailingworldwides</div>
+								<h2 style="font-size:28px;">
+									Providing Full Rang of Courier And Logistics Services Worldwide
+								</h2>
+
+
+
+								<div class="text">
+									<p>COURIERMAILING Group is one of the world’s leading logistic /Security company.  The Group connects people and markets and is an enabler of global trade. It aspires to be the first choice for customers, employees and investors worldwide.
+									</p>
+
+
+
+
+
+									<p>
+										To this end, COURIERMAILING Group is focusing on growth in its profitable core logistics businesses and accelerating the digital transformation in all business divisions.
+									</p>
+
+
+
+
+								</div>
+							</div>
+
+
+
+
+							<p>
+								The Group contributes to the world through sustainable business practices, corporate citizenship and environmental activities. By the year 2050, COURIERMAILING Group aims to achieve net-zero emissions logistics.
+							</p>
+
+
+							<!--
+								<div class="button-box">
+									<a href="#" class="theme-btn btn-style-three">
+									Explore More <span class="icon fas fa-angle-double-right"></span></a>
+								</div>
+								-->
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Welcome Section -->
+
+
+
+
+
+
+
+	<!-- Start of goodness feature section
+	============================================= -->
+	<section id="ft-goodness-feature" class="ft-goodness-feature-section">
+		<div class="container">
+			<div class="ft-section-title-2 headline pera-content text-center">
+				<h2>Our Services</h2>
+				<p>
+					Our services include armored car transportation, money processing,
+					long-distance transport of valuables, vaulting and other value-added solutions.
+				</p>
+			</div>
+			<div class="ft-goodness-featured-content">
+				<div class="row">
+					<div class="col-lg-4 col-md-6">
+						<div class="ft-goodness-featured-innerbox text-center">
+							<div class="ft-goodness-featured-icon d-flex align-items-center justify-content-center">
+								<i class="fal fa-anchor"></i>
+							</div>
+							<div class="ft-goodness-featured-text headline pera-content">
+								<h3>Our Mission</h3>
+								<p>
+									We meet our customers' demands for a personal & profesional
+									service by offering innovative supply chain solutions.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="ft-goodness-featured-innerbox text-center">
+							<div class="ft-goodness-featured-icon d-flex align-items-center justify-content-center">
+								<i class="fal fa-user-headset"></i>
+							</div>
+							<div class="ft-goodness-featured-text headline pera-content">
+								<h3>Our Vision</h3>
+								<p>
+									We proactively and constantly look for new possibilities. Therefore,
+									an important part of our vision is to attract & retain.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="ft-goodness-featured-innerbox text-center">
+							<div class="ft-goodness-featured-icon d-flex align-items-center justify-content-center">
+								<i class="fal fa-badge-sheriff"></i>
+							</div>
+							<div class="ft-goodness-featured-text headline pera-content">
+								<h3>Core Values</h3>
+								<p>
+									Procedures, values and attitudes are crucial to our reputation – not to mention the
+									success we enjoy.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of goodness feature section
+	============================================= -->
+
+	<!-- Start of Footer   section
+	============================================= -->
+{% endblock %}

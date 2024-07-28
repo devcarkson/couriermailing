@@ -1,0 +1,250 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Move Commercial Goods : Couriermailingworldwide | Express Delivery, Courier &amp; Shipping Services | Worlwide{% endblock %}
+
+{% block content %}
+
+<!-- Start of Breadcrumb section
+	============================================= -->
+	<section id="ft-breadcrumb" class="ft-breadcrumb-section position-relative" data-background="{% static "img/bg/bread-bg.jpg" %}">
+		<span class="background_overlay"></span>
+		<span class="design-shape position-absolute"><img src="assets/img/shape/tmd-sh.html" alt=""></span>
+		<div class="container">
+			<div class="ft-breadcrumb-content headline text-center position-relative">
+				<h2>Move Commercial Goods</h2>
+				<div class="ft-breadcrumb-list ul-li">
+					<ul>
+						<li><a href="{% url "index" %}">Home</a></li>
+						<li>Move Commercial Goods</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>	
+<!-- End of Breadcrumb section
+	============================================= -->
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Tracking Section -->
+		<section class="ft1-tracking-section">
+			<div class="auto-container">
+				<div class="inner-container">
+					<div class="row clearfix">
+						<!-- Tracking Column -->
+						<div class="tracking-column col-lg-7 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<!-- Tracking Form -->
+								<div class="tracking-form">
+									<form method="post" class="search-form" id="frmTrack" name="frmTrack" action="#"
+									onsubmit="return false">
+									<div class="form-group">
+										<input type="search" id="shipment_tracking_no" name="shipment_tracking_no"
+											value="" placeholder="Enter Your Tracking Number" required>
+										<button class="theme-btn btn-style-two" name="submitTrackNo"
+												onclick="trackNowFunc()">Track & Trace <span
+												class="icon fas fa-angle-double-right"></span></button>
+									</div>
+								</form>
+
+								{% comment %} <div id="loadingPop" style="display:none;">Loading...</div> {% endcomment %}
+								</div>
+							</div>
+						</div>
+						
+						
+						
+						
+						
+						<!-- Featured Column -->
+						<div class="featured-column col-lg-5 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<div class="row clearfix">
+								
+									<!-- Feature Block -->
+									<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+										<div class="inner-box">
+											<div class="icon flaticon-discount"></div>
+											<h6>Affordable Premium Shipping!</h6>
+										</div>
+									</div>
+									
+									<!-- Feature Block -->
+									<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+										<div class="inner-box">
+											<div class="icon flaticon-shield-2"></div>
+											<h6>Safe & Reliable <br> Courier Services!</h6>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Tracking Section -->
+
+		
+
+		
+	
+
+<!-- Start of About section
+	============================================= -->
+	<section id="ft-about" class="ft-about-section">
+		<div class="container">
+			<div class="ft-about-content">
+				<div class="row">
+					<div class="col-lg-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="ft-about-img-exp position-relative">
+							<div class="ft-about-exp-area headline pera-content position-absolute">
+								<div class="ft-about-exp-img">
+									<img src="{% static "img/shape/exp-sh1.png" %}" alt="">
+								</div>
+								<div class="ft-about-exp-text position-absolute">
+									<h3><span class="counter">10</span><b>+</b> 
+									Years</h3>
+									<p>
+									Of Excellent Services
+									</p>
+								</div>
+							</div>
+							<div class="ft-about-img">
+								<img src="{% static "img/about/ab1.png" %}" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="ft-about-text-wrapper">
+							<div class="ft-section-title headline pera-content">
+								<span class="sub-title">Move Commercial Goods</span>
+								<h2>
+								 Local and Long Distance
+								</h2>
+								<p>
+								The commercial goods moving services of our company allows the customers to 
+								move their commercial goods from one place to another without any damage.
+								</p>
+								
+								
+								<br>
+								
+								
+								<p>
+								We are providing high quality commercial goods packing and moving services to our customers to ship 
+								their goods such as furniture, fixtures, cabinets, computers, 
+								hospital equipments, vehicles both two wheelers and four wheelers to their location.
+								</p>
+
+
+
+
+							</div>
+							
+							
+							
+							
+							
+							
+							
+							<div class="ft-about-feature-list-warpper">
+								<div class="ft-about-feature-list-item d-flex align-items-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+									<div class="ft-about-feature-icon d-flex align-items-center justify-content-center">
+										<i class="flaticon-worldwide"></i>
+									</div>
+									<div class="ft-about-feature-text headline pera-content">
+										<h3>Air Freight Service</h3>
+										
+		<p style="font-size:13px; line-height:26px;">
+		 Air Freight is the fastest way to ship customer's goods to the destination. We are fully equipped and have well 
+		 trained people to handle for special projects, 
+		 oversized cargo and dangerous goods. 
+		</p>								
+										
+									</div>
+								</div>
+								<div class="ft-about-feature-list-item d-flex align-items-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+									<div class="ft-about-feature-icon d-flex align-items-center justify-content-center">
+										<i class="flaticon-boat"></i>
+									</div>
+									<div class="ft-about-feature-text headline pera-content">
+										<h3>Ocean Freight Service</h3>
+										
+										
+										<p style="font-size:13px; line-height:26px;">
+Ocean freight is the main facilitator for international shipping it allows to make shipments of large amount of cargo. 
+Ocean freight can be done in many ways, like container, bulk cargo etc. 
+The most common shipping in international freight is ocean freight by container.
+										</p>
+									</div>
+								</div>
+								
+								
+								
+								
+								
+								
+								
+								
+		<div class="ft-about-feature-list-item d-flex align-items-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+									<div class="ft-about-feature-icon d-flex align-items-center justify-content-center">
+										<i class="flaticon-plane"></i>
+									</div>
+									<div class="ft-about-feature-text headline pera-content">
+										<h3>Domestic Freight Service</h3>
+										
+										
+										<p style="font-size:13px; line-height:26px;">
+										We offer our customers with proficient Domestic Transportation services. 
+										With the assistance of our trustworthy agents located at strategic locations, 
+										we are able to serve our customers at the remote areas as well.
+										</p>
+									</div>
+								</div>
+						
+								
+								
+		
+
+
+
+<div class="ft-about-feature-list-item d-flex align-items-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+									<div class="ft-about-feature-icon d-flex align-items-center justify-content-center">
+										<i class="flaticon-logistics"></i>
+									</div>
+									<div class="ft-about-feature-text headline pera-content">
+										<h3>FCL (Full Container Load)</h3>
+										
+										
+										<p style="font-size:13px; line-height:26px;">
+										We offer wide range of containers; every container is designed to meet different needs. 
+										These can be fully enclosed, temperature-controlled or simply a flat base for oversize goods. 
+										</p>
+									</div>
+								</div>						
+								
+								
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- End of About section
+	============================================= -->
+	
+
+{% endblock %}

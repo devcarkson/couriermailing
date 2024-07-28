@@ -1,0 +1,321 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Air Freight : Couriermailingworldwide | Express Delivery, Courier &amp; Shipping Services | Worlwide{% endblock %}
+
+{% block content %}
+
+	<!-- Start of Breadcrumb section
+	============================================= -->
+	<section id="ft-breadcrumb" class="ft-breadcrumb-section position-relative"
+		data-background="{% static "img/bg/bread-bg.jpg" %}">
+		<span class="background_overlay"></span>
+		<span class="design-shape position-absolute"><img src="{% static "img/shape/tmd-sh.html" %}" alt=""></span>
+		<div class="container">
+			<div class="ft-breadcrumb-content headline text-center position-relative">
+				<h2>Air Freight</h2>
+				<div class="ft-breadcrumb-list ul-li">
+					<ul>
+						<li><a href="{% url "index" %}">Home</a></li>
+						<li>Air Freight</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Breadcrumb section
+	============================================= -->
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Tracking Section -->
+	<section class="ft1-tracking-section">
+		<div class="auto-container">
+			<div class="inner-container">
+				<div class="row clearfix">
+					<!-- Tracking Column -->
+					<div class="tracking-column col-lg-7 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<!-- Tracking Form -->
+							<div class="tracking-form">
+								<form method="post" class="search-form" id="frmTrack" name="frmTrack" action="#"
+									onsubmit="return false">
+									<div class="form-group">
+										<input type="search" id="shipment_tracking_no" name="shipment_tracking_no"
+											value="" placeholder="Enter Your Tracking Number" required>
+										<button class="theme-btn btn-style-two" name="submitTrackNo"
+												onclick="trackNowFunc()">Track & Trace <span
+												class="icon fas fa-angle-double-right"></span></button>
+									</div>
+								</form>
+
+								{% comment %} <div id="loadingPop" style="display:none;">Loading...</div> {% endcomment %}
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+					<!-- Featured Column -->
+					<div class="featured-column col-lg-5 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<div class="row clearfix">
+
+								<!-- Feature Block -->
+								<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+									<div class="inner-box">
+										<div class="icon flaticon-discount"></div>
+										<h6>Affordable Premium Shipping!</h6>
+									</div>
+								</div>
+
+								<!-- Feature Block -->
+								<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+									<div class="inner-box">
+										<div class="icon flaticon-shield-2"></div>
+										<h6>Safe & Reliable <br> Courier Services!</h6>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Tracking Section -->
+
+
+
+
+
+
+
+	<section id="ft-thx-why-choose-us-3" class="ft-thx-why-choose-us-section-3">
+		<div class="container">
+			<div class="ft-thx-why-choose-us-content-3">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="ft-thx-why-choose-us-text-3">
+							<div class="ft-thx-section-title-3 headline pera-content wow fadeInUp" data-wow-delay="00ms"
+								data-wow-duration="1500ms"
+								style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+								<span></span>
+								<h2>Air Freight Carrier</h2>
+
+								<p>
+									Domestic and International Air Freight service for any kind of goods enables
+									the customer to ship anything in the process of relocating.
+								</p>
+
+
+								<br>
+
+
+								<p>
+									We can meet all customer transportation needs around the world by our Air Freight
+									Services.
+									We bring customers shipments on time with safety to any destination in the world.
+								</p>
+
+
+							</div>
+
+
+
+
+
+							<div class="ft-thx-why-choose-item-box headline">
+
+
+								<div class="ft-thx-why-choose-item wow fadeInUp" data-wow-delay="200ms"
+									data-wow-duration="1500ms"
+									style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp; padding:20px; margin-left:0px;">
+									<h3>International Air Freight</h3>
+
+
+
+
+									<p style="font-size:13px; margin-top:20px; line-height:26px;">
+										We service door to door service to major metropolitan areas around the world.
+										When the customer needs some emergency international shipping,
+										we offer some special service of Air freight
+										solutions to deliver customer's goods via fastest possible way of shipping.
+									</p>
+
+
+								</div>
+
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="ft-thx-why-choose-img-3 position-relative wow fadeInRight" data-wow-delay="100ms"
+							data-wow-duration="1500ms"
+							style="visibility: visible; animation-duration: 1500ms; animation-delay: 100ms; animation-name: fadeInRight;">
+							<div class="inner-img">
+								<img src="{% static "imgs/about/ab9.jpg" %}" alt="">
+							</div>
+							<div class="inner-text">
+								10+ Years
+								Of Excellent Services
+							</div>
+							<div class="inner-img-2 position-absolute">
+								<img src="{% static "imgs/about/ab10.jpg" %}">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- End of Service section
+	============================================= -->
+
+
+
+
+	<section id="ft-goodness-feature" class="ft-goodness-feature-section" data-background="{% static "img/bg/shape-bg.jpg" %}"
+		style='background-image: url("{% static "img/bg/shape-bg.jpg" %}"); padding-top:60px;'>
+		<div class="container">
+			<div class="ft-section-title-2 headline pera-content text-center">
+
+				<h2>Domestic Air Freight</h2>
+
+
+
+
+				<div style="text-align:left">
+
+
+					<p>
+						We understand the customer's need of domestic Air Freight services, and we are dedicated to
+						delivering goods on time to meet customer's need.
+						These services are provided by our well trained professionals,
+						they ensure to deliver these products effectively and efficiently.
+					</p>
+
+					<br>
+
+
+					<p>
+						We make sure that the cargo is delivered very safe via Air Freight.
+						All the procedures are well executed right from the storage to customer's destination.
+					</p>
+
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+	<section class="ft1-welcome-section">
+		<div class="pattern-layer" style="background-image:url({% static "images/background/pattern-1.png" %})"></div>
+		<div class="auto-container">
+			<div class="inner-container">
+				<div class="row clearfix">
+
+					<!-- Image Column -->
+					<div class="image-column col-lg-6 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<div class="image">
+								<img src="{% static "images/resource/welcome2.jpg" %}" alt="">
+
+							</div>
+						</div>
+					</div>
+
+					<!-- Content Column -->
+					<div class="content-column col-lg-6 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<div class="sec-title">
+
+								<h2 style="font-size:28px;">
+									Air Freight Forwarding Services
+								</h2>
+
+
+
+								<div class="text">
+									<p>
+										If you rely on air freight for your business, rely on
+										couriermailingworldwide for cost-effective,
+										smooth delivery of your cargo via our air freight forwarding services
+									</p>
+
+
+
+
+									<ul class="list">
+										<li>Door to door delivery to worldwide destinations.</li>
+										<li>Well trained personnel for handling dangerous goods.</li>
+										<li>Pick up at origin</li>
+										<li>Customs Clearance</li>
+										<li>Cargo Insurance</li>
+									</ul>
+
+
+
+									<p>
+										Thanks to our strategic alliances around the globe, you have the flexibility to
+										choose from a range of air freight
+										service options tailored to your precise needs, complete with end-to-end
+										visibility.
+									</p>
+
+
+
+
+								</div>
+							</div>
+
+
+
+
+
+
+
+							<!--
+								<div class="button-box">
+									<a href="#" class="theme-btn btn-style-three">
+									Explore More <span class="icon fas fa-angle-double-right"></span></a>
+								</div>
+								-->
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

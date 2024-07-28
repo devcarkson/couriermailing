@@ -230,7 +230,7 @@ STATICFILES_DIRS = [
 
 
 # To Handle admin staticfiles on development 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 

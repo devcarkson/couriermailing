@@ -130,6 +130,7 @@
 	</div>
 
     
+
     <!-- Navbar Start -->
 
 	<header id="ft-header" class="ft-header-section header-style-one">
@@ -291,29 +292,7 @@
 
     <!-- Navbar End -->
 
-	 <!--message Alert-->
-	 <div class="alert-container">
-		{% if messages %}
-			{% for message in messages %}
-				<div class="alert alert-warning alert-dismissible fade show alert-timeout" role="alert">
-					<strong>Hello!</strong> {{ message }}.
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-			{% endfor %}
-		{% endif %}
-	</div>
-
-	<script>
-		// Function to hide the alert after 9 seconds
-		setTimeout(function() {
-			var alerts = document.getElementsByClassName('alert-timeout');
-			for (var i = 0; i < alerts.length; i++) {
-				alerts[i].style.display = 'none';
-			}
-		}, 9000); 
-	</script>
+	
 
 
 

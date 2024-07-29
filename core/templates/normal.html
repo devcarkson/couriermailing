@@ -41,6 +41,25 @@ Services | Worlwide{% endblock %}
 				<div class="row clearfix">
 					<!-- Tracking Column -->
 					<div class="tracking-column col-lg-7 col-md-12 col-sm-12">
+						<!-- Message Alert -->
+						<div class="alert-container" style="z-index:1">
+							{% if messages %}
+								{% for message in messages %}
+									<div class="alert alert-warning alert-dismissible fade show alert-timeout" role="alert">
+										<strong>Hello!</strong> {{ message }}.
+									</div>
+								{% endfor %}
+							{% endif %}
+						</div>
+
+						<script>
+							setTimeout(function() {
+								var alerts = document.getElementsByClassName('alert-timeout');
+								for (var i = 0; i < alerts.length; i++) {
+									alerts[i].style.display = 'none';
+								}
+							}, 5000);
+						</script>
 						<div class="inner-column">
 							<!-- Tracking Form -->
 							<div class="tracking-form">

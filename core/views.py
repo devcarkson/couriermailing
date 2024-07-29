@@ -53,11 +53,13 @@ def express(request):
             request.session['sender_id'] = sender.id
             request.session['receiver_id'] = receiver.id
 
-            return redirect('payment')  
+            # messages.success(request, 'Data saved successfully.')
+            return redirect('payment')
         else:
-            return render(request, 'express.html', {'error': 'Please fill all fields'})
+            messages.error(request, 'Please fill all fields.')
 
     return render(request, 'express.html')
+
 
 
 
@@ -76,8 +78,7 @@ def normal(request):
 
             return redirect('payments')  
         else:
-            print('Sender Form Errors:', nsender_form.errors)
-            print('Receiver Form Errors:', nreceiver_form.errors)
+            messages.error(request, 'Please fill all fields.')
     else:
         nsender_form = NormalSenderForm()
         nreceiver_form = NormalReceiverForm()

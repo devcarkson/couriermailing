@@ -2,6 +2,8 @@
 {% load static %}
 {% block title %}Express : Couriermailingworldwide | Express Delivery, Courier &amp; Shipping Services | Worlwide{% endblock %}
 
+
+
 {% block content %}
 	<!-- Start of Breadcrumb section
 	============================================= -->
@@ -32,7 +34,7 @@
 
 
 
-
+	
 	<!-- Tracking Section -->
 	<section class="ft1-tracking-section">
 		<div class="auto-container">
@@ -40,6 +42,25 @@
 				<div class="row clearfix">
 					<!-- Tracking Column -->
 					<div class="tracking-column col-lg-7 col-md-12 col-sm-12">
+							<!-- Message Alert -->
+							<div class="alert-container" style="z-index:1">
+								{% if messages %}
+									{% for message in messages %}
+										<div class="alert alert-warning alert-dismissible fade show alert-timeout" role="alert">
+											<strong>Hello!</strong> {{ message }}.
+										</div>
+									{% endfor %}
+								{% endif %}
+							</div>
+
+							<script>
+								setTimeout(function() {
+									var alerts = document.getElementsByClassName('alert-timeout');
+									for (var i = 0; i < alerts.length; i++) {
+										alerts[i].style.display = 'none';
+									}
+								}, 5000);
+							</script>
 						<div class="inner-column">
 							<!-- Tracking Form -->
 							<div class="tracking-form">
@@ -130,6 +151,15 @@
 		</div>
 	</section>
 
+	{% comment %} {% if messages %}
+        <div class="messages">
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %} {% endcomment %}
 
 
 
@@ -138,7 +168,7 @@
 	<section id="ft-contact-page" class="ft-contact-page-section page-padding">
 		<div class="container">
 			<div class="ft-contact-page-content">
-				<form method="post" novalidate>
+				<form method="post" action="{% url 'express' %}" novalidate>
 					{% csrf_token %}
 					<div class="row">
 						<div class="col-lg-6">
@@ -147,6 +177,7 @@
 								<div class="row">
 									<div class="col-lg-6">
 										<input type="text" name="name" id="name" placeholder="Your Name" class="form-control" required>
+										
 									</div>
 									<div class="col-lg-6">
 										<input type="email" name="email" id="email" placeholder="Email Address" class="form-control" required>
